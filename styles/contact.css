@@ -1,0 +1,76 @@
+#hero-image {
+  margin-bottom: 0;
+}
+#contact .contact-content {
+  padding-bottom: 40px;
+}
+#contact .contact-content .contact-page-header img {
+  max-width: 120px;
+}
+#contact .contact-content .contact-page-header h2 {
+  font-size: 46px;
+  font-weight: 400;
+}
+#contact .contact-content .maps #map {
+  height: 300px;
+}
+#contact .address {
+  font-weight: 400;
+  color: #67686b;
+  line-height: 22px;
+  font-size: 20px;
+}
+@media (max-width: 480px) {
+  #contact .address {
+    padding-top: 25px;
+  }
+}
+#contact .address p {
+  margin-bottom: 25px;
+  padding-left: 35px;
+  position: relative;
+}
+#contact .address p a {
+  color: #67686b;
+}
+#contact .address p a:hover {
+  text-decoration: none;
+}
+#contact .address p:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#contact .address p.addr:before {
+  background-image: url("../images/pin_ico.png");
+}
+#contact .address p.tel:before {
+  background-image: url("../images/tel_ico.png");
+}
+#contact .address p.fax:before {
+  background-image: url("../images/fax_ico.png");
+}
+#contact .address p.mail:before {
+  background-image: url("../images/letter_ico.png");
+}
+#contact .address p.social-link {
+  padding-left: 0;
+}
+#contact .address p.social-link img {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+@media (max-width: 480px) {
+  #contact .address p.social-link img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

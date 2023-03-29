@@ -1,0 +1,30 @@
+.icon_listed {
+  overflow: hidden;
+  margin-bottom: 30px;
+  .icon {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    @media screen and (max-width: 520px) {
+      min-height: 160px;
+    }
+    .icon-img {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .icon-title {
+      color: #fff;
+    }
+  }
+}
+
+.btn-icon-load-more {
+  clear: both;
+  #load_icon_more {
+    background-color: #211817;
+    color: #fff;
+    font-size: 22px;
+    padding: 5px 30px;
+    border: 1px solid #7d7d7d;
+  }
+}

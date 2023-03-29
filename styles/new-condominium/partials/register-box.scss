@@ -1,0 +1,455 @@
+@import "vars";
+
+#loader {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.lds-spinner {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#top_menu {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 5px 8px rgba(0,0,0,.1);
+  top: 100px;
+  @media screen and (max-width: $screen-xs) {
+    display: none;
+  }
+  &.menu_flex {
+    position: relative;
+    box-shadow: none;
+    top: 0;
+  }
+  .navbar {
+    margin-bottom: 0;
+    min-height: 0;
+    text-align: center;
+    border: none;
+    ul.nav {
+      float: none;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      li {
+        border-bottom: 5px solid transparent;
+        &.active {
+          border-bottom-color: $secondary-color;
+          a {
+            opacity: 1;
+          }
+        }
+        a {
+          padding: 15px 15px 10px 15px;
+          color: $main-color;
+          opacity: .6;
+          cursor: pointer;
+          @media screen and (max-width: $screen-sm) {
+            padding: 10px 10px 5px 10px;
+            font-size: 16px;
+          }
+          &:hover, &:focus {
+            background-color: transparent;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+#hero_banner {
+  #hero_slider_d, #hero_slider_m {
+    .slick-arrow {
+      z-index: 2;
+      height: 50px;
+      &::before {
+        display: none;
+      }
+      &.slick-next {
+        right: 15px;
+      }
+      &.slick-prev {
+        left: 15px;
+      }
+    }
+  }
+}
+
+.pre-register-box, .post-register-box {
+  height: 80px;
+  background: #fff url("https://assetwise.co.th/migrate/wp-content/uploads/2020/07/space-bg.jpg") center 100%;
+  @media screen and (max-width: 1024px) {
+    height: 60px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    height: 40px;
+    background-size: cover;
+  }
+}
+#register_section {
+  padding: 10rem 0;
+  background: linear-gradient(to right, #EFEFEF 60%, #0F2D52 0);
+  @media screen and (max-width: 1024px) {
+    padding: 5rem 0;
+  }
+  @media screen and (max-width: $screen-sm) {
+    padding: 3rem 0;
+  }
+  @media screen and (max-width: $screen-xs) {
+    background: linear-gradient(to bottom, #EFEFEF 60%, #0F2D52 0);
+  }
+  .register-headline-text {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: $screen-xs) {
+      height: auto;
+      padding: 20px 0 30px;
+    }
+    .headline {
+      color: $main-color;
+      margin: 0 0 50px;
+      font-size: 36px;
+      letter-spacing: 1px;
+      line-height: 1;
+      padding-left: 15px;
+      border-left: 5px solid $secondary-color;
+      position: relative;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 28px;
+      }
+      @media screen and (max-width: $screen-xs) {
+        margin-bottom: 20px;
+        text-align: center;
+        border: none;
+        font-size: 32px;
+        padding: 0;
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        height: 3px;
+        left: -50%;
+        bottom: -25px;
+        position: absolute;
+        background-color: $main-color;
+        @media screen and (max-width: $screen-sm) {
+          left: -50px;
+        }
+        @media screen and (max-width: $screen-xs) {
+          display: none;
+        }
+      }
+    }
+    .sub-headline {
+      color: $secondary-color;
+      font-size: 28px;
+      line-height: 1;
+      letter-spacing: 1px;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: $screen-xs) {
+        text-align: center;
+        line-height: normal;
+        font-size: 22px;
+      }
+    }
+  }
+  .register-box-wrapper {
+    @media screen and (max-width: $screen-xs) {
+      padding: 0;
+      position: relative;
+    }
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      top: 0;
+      right: 0;
+      display: none;
+      position: absolute;
+      border-top: 40px solid #EFEFEF;
+      border-left: 40px solid transparent;
+      z-index: 2;
+      @media screen and (max-width: $screen-xs) {
+        display: block;
+      }
+    }
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      position: absolute;
+      border-bottom: 40px solid $main-color;
+      border-right: 40px solid transparent;
+      @media screen and (max-width: $screen-xs) {
+        display: block;
+      }
+    }
+    .form-bottom {
+      margin-top: -30px;
+    }
+  }
+}
+
+#register_box {
+  display: inline-block;
+  @media screen and (max-width: $screen-xs) {
+    padding: 5rem 2rem 5rem;
+    background: white;
+    width: 100%;
+  }
+  .wpcf7 {
+    background-color: white;
+  }
+  form {
+    background-color: white;
+    display: inline-block;
+    padding: 0 55px;
+    @media screen and (max-width: $screen-sm) {
+      padding: 0 35px;
+    }
+    @media screen and (max-width: $screen-xs) {
+      padding: 0;
+      width: 100%;
+    }
+  }
+  label {
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  input {
+    &.wpcf7-text {
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #102d51;
+      border-radius: 0;
+      margin-bottom: 15px;
+      font-weight: 300;
+      background: transparent;
+      &::placeholder {
+        color: $main-color;
+      }
+      &:focus, &:hover {
+        outline: transparent;
+      }
+    }
+  }
+  .custom-select {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .wpcf7-not-valid-tip {
+    font-size: .8em;
+    font-weight: 300;
+  }
+  .wpcf7-select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #102d51;
+    padding: 6px;
+  }
+  p {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+  }
+  .agree-submit {
+    margin-top: 15px;
+  }
+  .wpcf7-submit {
+    color: #fff;
+    font-size: 36px;
+    padding: 5px 55px;
+    border: none;
+    font-weight: normal;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0;
+    @media screen and (max-width: $screen-xs) {
+      margin-bottom: 0;
+    }
+  }
+  .wpcf7-list-item {
+    margin: 0;
+    a {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+  .wpcf7-acceptance {
+    color: $main-color;
+    @media screen and (max-width: $screen-xs) {
+      text-align: center;
+    }
+    a {
+      color: $main-color;
+    }
+    .wpcf7-list-item-label {
+      font-size: 18px;
+      margin-left: 4px;
+      @media screen and (max-width: $screen-xs) {
+        font-size: 14px;
+      }
+    }
+  }
+  .wpcf7 form.invalid .wpcf7-response-output {
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+  }
+  .ajax-loader {
+    display: none;
+  }
+  .custom-select-wrapper {
+    label {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    > p {
+      display: none;
+    }
+  }
+  .telbox_wrapper {
+
+    &.d-theme-dark {
+      .telbox {
+        color: #000;
+        border: 3px solid #000;
+      }
+    }
+    &.d-theme-light {
+      .telbox {
+        color: #fff;
+        border: 3px solid #fff;
+      }
+    }
+
+    &.m-theme-dark {
+      @media (max-width: $screen-xs) {
+        .telbox {
+          color: #000;
+          border: 3px solid #000;
+        }
+      }
+    }
+    &.m-theme-light {
+      @media (max-width: $screen-xs) {
+        .telbox {
+          color: #fff;
+          border: 3px solid #fff;
+        }
+      }
+    }
+
+    .telbox {
+      font-size: 30px;
+      padding: 5px 20px;
+      border-radius: 15px;
+      margin: 15px auto 0;
+      line-height: 80%;
+      //overflow: auto;
+      display: block;
+      width: max-content;
+
+      .fa {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

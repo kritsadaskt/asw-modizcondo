@@ -1,0 +1,176 @@
+@import "../../variables";
+
+#hero-banner {
+  position: relative;
+  min-height: 650px;
+
+  @media (max-width: @screen-sm) {
+    min-height: auto;
+  }
+
+  #register-box {
+    position: absolute;
+    padding: 20px 15px;
+    width: 365px;
+    top: 0;
+
+    @media (max-width: @screen-sm) {
+      padding: 15px;
+      width: 320px;
+    }
+
+    @media (max-width: @screen-xs) {
+      position: relative;
+      padding: 20px 0;
+      width: 100%;
+    }
+
+    &.left {
+      left: 10%;
+
+      @media (max-width: @screen-sm) {
+        left: 10px;
+      }
+      @media (max-width: @screen-xs) {
+        left: auto;
+      }
+    }
+
+    &.right {
+      right: 10%;
+      @media (max-width: @screen-sm) {
+        right: 10px;
+      }
+      @media (max-width: @screen-xs) {
+        right: auto;
+      }
+    }
+
+    .register-box-promotion {
+      margin: 20px auto 25px;
+      display: block;
+      @media (min-width: 769px) {
+        max-width: 85%;
+      }
+      min-height: 100px;
+    }
+
+    #reg-form {
+      .name-row {
+        margin: 0 -5px 10px;
+        .name_col {
+          padding: 0 5px;
+        }
+      }
+
+      .form-group {
+        margin-bottom: 10px;
+      }
+
+      input {
+        &[type='text'], &[type='tel'], &[type='email'] {
+          border: 1px solid #ddd;
+          box-shadow: none;
+          font-size: 20px;
+          padding: 0 10px;
+          font-weight: 300;
+          height: 35px;
+          @media (max-width: @screen-xs) {
+            border: 1px solid #ddd;
+            font-weight: 400;
+            color: #666;
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        border: none;
+        margin-top: 15px;
+        padding: 5px 15px;
+        border-radius: 4px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: normal;
+        transition: filter 200ms ease-out;
+
+        &:hover, &:focus, &:active {
+          transition: filter 180ms ease-in;
+          filter: brightness(90%);
+        }
+
+        @media (max-width: @screen-sm) {
+          margin-top: 0;
+        }
+      }
+
+      .telbox_wrapper {
+
+        &.d-theme-dark {
+          .telbox {
+            color: #000;
+            border: 3px solid #000;
+          }
+        }
+        &.d-theme-light {
+          .telbox {
+            color: #fff;
+            border: 3px solid #fff;
+          }
+        }
+
+        &.m-theme-dark {
+          @media (max-width: @screen-xs) {
+            .telbox {
+              color: #000;
+              border: 3px solid #000;
+            }
+          }
+        }
+        &.m-theme-light {
+          @media (max-width: @screen-xs) {
+            .telbox {
+              color: #fff;
+              border: 3px solid #fff;
+            }
+          }
+        }
+
+        .telbox {
+          font-size: 30px;
+          padding: 5px 20px;
+          border-radius: 15px;
+          margin: 15px auto 0;
+          line-height: 80%;
+          overflow: auto;
+          display: block;
+          width: max-content;
+
+          .fa-phone {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #sold-out-banner {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    padding: 40px 15px 45px;
+    right: 10%;
+
+    @media (max-width: @screen-sm) {
+      width: 300px;
+      padding: 35px 15px 30px;
+      right: 5%;
+    }
+
+    @media (max-width: @screen-xs) {
+      position: relative;
+      width: 100%;
+      right: 0;
+    }
+  }
+}

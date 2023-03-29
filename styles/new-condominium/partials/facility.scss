@@ -1,0 +1,194 @@
+@import "vars";
+
+#facility_1 {
+  padding-top: 50px;
+  @media screen and (max-width: $screen-xs) {
+    padding-top: 30px;
+  }
+  .tabs-control {
+    .nav {
+      margin: 0;
+      display: flex;
+      border-bottom: none;
+      justify-content: center;
+      @media screen and (max-width: $screen-xs) {
+        display: block;
+      }
+      li {
+        a {
+          color: #97A4B4;
+          border-radius: 0;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 4px solid transparent;
+          &:hover, &:focus {
+            color: $main-color;
+            background-color: transparent;
+            border-bottom-color: $secondary-color;
+          }
+        }
+        &.active {
+          a {
+            color: $main-color;
+            border-bottom-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .tabs-contents {
+    @media screen and (max-width: $screen-xs) {
+      padding: 0;
+    }
+    .tab-content {
+      padding: 30px 0;
+      @media screen and (max-width: $screen-xs) {
+        padding: 0 0 50px;
+      }
+    }
+    .fac-card {
+      background-color: $secondary-color;
+      .fac-detail {
+        width: 40%;
+        float: left;
+        padding: 6rem 6rem 0;
+        color: white;
+        @media screen and (max-width: $screen-sm) {
+          padding: 3rem 3rem 0;
+        }
+        @media screen and (max-width: $screen-xs) {
+          width: 100%;
+          padding: 2rem;
+        }
+        h4 {
+          font-size: 30px;
+          font-weight: 400;
+          @media screen and (max-width: $screen-xs) {
+            margin-top: 0;
+          }
+        }
+        .txt {
+          font-weight: 300;
+          font-size: 18px;
+          padding-left: 15px;
+          border-left: 3px solid white;
+        }
+      }
+      .fac-img {
+        width: 60%;
+        float: right;
+        height: 450px;
+        background-size: cover;
+        background-position: right bottom;
+        position: relative;
+        &::before {
+          content: 'COMPUTER GENERATED IMAGE';
+          position: absolute;
+          color: #fff;
+          font-size: 12px;
+          bottom: 0;
+          right: 5px;
+          font-weight: normal;
+          display: none;
+          @media screen and (max-width: $screen-xs) {
+            font-size: 8px;
+            bottom: 2px;
+          }
+        }
+        @media screen and (max-width: $screen-sm) {
+          height: 280px;
+        }
+        @media screen and (max-width: $screen-xs) {
+          width: 100%;
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+#other_facilities {
+  padding: 7rem 0 5rem;
+  position: relative;
+  background-color: $main-color;
+  @media screen and (max-width: $screen-xs) {
+    padding: 50px 0 50px;
+    background-size: cover;
+    background-position: left bottom;
+  }
+  .bottom-left-border {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    @media screen and (max-width: $screen-xs) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .top-right-border {
+    position: absolute;
+    width: 12px;
+    right: 10%;
+    top: 0;
+    @media screen and (max-width: $screen-xs) {
+      width: 20px;
+      right: 15px;
+      height: auto;
+      top: -350px;
+    }
+  }
+  .section-title {
+    .title {
+      color: white;
+    }
+  }
+  #icon_listed {
+    overflow: hidden;
+    @media screen and (max-width: 520px) {
+      margin-bottom: 30px;
+    }
+  }
+  #toggle_fac_icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-color: #eeeeee59;
+    border-radius: 10px;
+    outline: transparent;
+    width: 160px;
+    .hideThem {
+      display: none;
+    }
+  }
+  .fac-item {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    @media screen and (max-width: $screen-xs) {
+      width: calc(100% / 3);
+      padding: 0 10px;
+      height: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 70%;
+      margin-bottom: 10px;
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 400;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+  }
+}

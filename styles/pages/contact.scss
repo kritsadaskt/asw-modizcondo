@@ -1,0 +1,336 @@
+@import "vars";
+
+.page-template-page-contact {
+  #hero-image{
+    margin-bottom: 0;
+  }
+  .contact-content {
+    .contact-page-header{
+      img{
+        max-width: 120px;
+      }
+      h2{
+        font-size: 46px;
+        font-weight: 400;
+      }
+    }
+    .maps {
+      #map {
+        height: 300px;
+      }
+    }
+    .section-separator {
+      margin-top: 40px;
+      height: 80px;
+      background: transparent url("https://assetwise.co.th/migrate/wp-content/uploads/2020/07/space-bg.jpg") center/cover repeat-x;
+    }
+  }
+
+  .address{
+    font-weight: 400;
+    color: #67686b;
+    line-height: 22px;
+    font-size: 20px;
+    @media(max-width: $screen-xs){
+      padding-top: 25px;
+    }
+    p{
+      margin-bottom: 25px;
+      padding-left: 35px;
+      position: relative;
+      a{
+        color: #67686b;
+        display: inline-block;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      &.addr{
+        &:before{
+          background-image: url("../../images/pin_ico.png");
+        }
+      }
+      &.tel{
+        &:before{
+          background-image: url("../../images/tel_ico.png");
+        }
+      }
+      &.fax{
+        &:before{
+          background-image: url("../../images/fax_ico.png");
+        }
+      }
+      &.mail{
+        &:before{
+          background-image: url("../../images/letter_ico.png");
+        }
+      }
+      &.social-link{
+        padding-left: 0;
+        img{
+          width: 45px;
+          height: 45px;
+          margin-right: 5px;
+          @media(max-width: $screen-xs) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .btn-contact-group button {
+      background-color: #069fdb;
+      border-color: #069fdb;
+      padding: 5px 40px;
+      width: 220px;
+      border-radius: 20px;
+      margin-bottom: 5px;
+      transition: background-color 300ms ease;
+      &:hover, &:focus {
+        background-color: #0076a5;
+        transition: background-color 300ms ease;
+      }
+    }
+  }
+
+  #appeal-modal {
+    .modal-dialog {
+      margin-top: 120px;
+      @media (max-width: $screen-xs) {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .modal-content {
+        border: none;
+
+        .modal-header {
+          padding: 0;
+          border: none;
+          position: relative;
+
+          button.close {
+            background-color: #bf242a;
+            opacity: 1;
+            color: #fff;
+            text-shadow: none;
+            width: 45px;
+            height: 45px;
+            font-size: 45px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 5;
+            right: -20px;
+            top: -20px;
+
+            &:focus, &:active {
+              outline: transparent;
+              background-color: darken(#bf242a, 10%);
+            }
+          }
+        }
+
+        .modal-body {
+          .appeal-modal-title {
+            margin: 10px 0 15px;
+            font-size: 28px;
+          }
+
+          .contact-box-wrapper {
+            overflow: auto;
+            a {
+              display: block;
+              width: 400px;
+              margin: 0 auto;
+              @media screen and (max-width: $screen-xs) {
+                width: 100%;
+              }
+            }
+            .contact-box {
+              width: 400px;
+              margin: 5px auto 10px;
+              overflow: auto;
+
+              @media (max-width: $screen-xs) {
+                width: 100%;
+              }
+
+              .left {
+                width: 25%;
+                float: left;
+                padding: 5px 10px;
+                background-color: #264855;
+                border-radius: 10px 0 0 10px;
+
+                @media (max-width: $screen-xs) {
+                  width: 30%;
+                }
+
+                &.icon-wrapper {
+                  .icon {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 auto;
+                    &.web {
+                      background: transparent url("../../images/appeal-form/website-icon.png") center no-repeat;
+                      background-size: cover;
+                    }
+                    &.email {
+                      background: transparent url("../../images/appeal-form/email-icon.png") center no-repeat;
+                      background-size: cover;
+                    }
+                    &.envelope {
+                      background: transparent url("../../images/contact_letter_icon.png") center no-repeat;
+                      background-size: contain;
+                    }
+                  }
+                }
+              }
+              .right {
+                width: 75%;
+                float: right;
+                padding: 26px 15px;
+                border-radius: 0 10px 10px 0;
+
+                @media (max-width: $screen-xs) {
+                  width: 70%;
+                }
+
+                span {
+                  &.address {
+                    background-color: #fff;
+                    color: #525252;
+                    text-align: center;
+                    height: auto;
+                    border-radius: 5px;
+                    display: block;
+                    font-size: 22px;
+                    padding: 3px;
+                  }
+                  &.topic {
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 22px;
+                    margin-top: 10px;
+                    line-height: 1;
+                  }
+                }
+              }
+
+              &.website {
+                .right {
+                  background-color: #059fda;
+                }
+              }
+
+              &.email {
+                .right {
+                  background-color: #bf1f24;
+                }
+              }
+
+              &.letter {
+                .right {
+                  background-color: #ffecb8;
+                  border-radius: 0 10px 10px 10px;
+                  padding: 15px;
+                  .text-box {
+                    background-color: #fff;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    ul {
+                      margin-left: 0;
+                      margin-bottom: 0;
+                      padding-left: 20px;
+                      li {
+                        a {
+                          width: auto;
+                          color: #454545;
+                          &:hover, &:focus {
+                            text-decoration: underline;
+                          }
+
+                          @media screen and (max-width: $screen-xs) {
+                            font-size: 16px;
+                          }
+                        }
+                      }
+                    }
+                    p {
+                      font-size: 18px;
+                      line-height: normal;
+                      margin-bottom: 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          hr {
+            border-color: #dbdbdb;
+          }
+
+          .disclaimer {
+            font-size: 18px;
+            line-height: normal;
+            display: inline-block;
+            padding: 0 15px;
+            width: 100%;
+
+            .responses_list {
+              p {
+                display: flex;
+                margin-bottom: 3px;
+                justify-content: space-between;
+                @media screen and (max-width: 520px) {
+                  width: 100%;
+                }
+                a {
+                  color: #00729e;
+                  text-decoration: underline;
+                }
+              }
+              @media screen and (max-width: $screen-xs) {
+                font-size: 18px;
+              }
+              strong {
+                font-weight: 500;
+                @media screen and (max-width: 520px) {
+                  display: inline-block !important;
+                }
+              }
+            }
+            #to-appeal-form {
+              background-color: #e01f25;
+              color: #fff;
+              font-size: 26px;
+              padding: 5px 25px;
+              display: inline-block;
+              margin-top: 15px;
+              border-radius: 10px;
+            }
+          }
+
+          button.go-appeal {
+            font-size: 24px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

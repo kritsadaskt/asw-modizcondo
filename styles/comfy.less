@@ -1,0 +1,200 @@
+@import "variables";
+
+@input-bg-color: #f5f6f8;
+@input-bg-border-color: #e9eaec;
+@cc-red: #a92722;
+
+#customer-care{
+  #hero-image{
+    height: 336px;
+    background: #000 url("https://assetwise.co.th/migrate/wp-content/uploads/2020/06/customer-care_banner-9june20.jpg") center no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    @media(max-width: @screen-sm-max){
+      height: 300px;
+      background-size: cover;
+      background-position: right;
+    }
+    @media(max-width: @screen-xs-max){
+      height: 200px;
+      background-position: top right;
+    }
+  }
+
+  .sec-topicbar {
+    .topicbar-right {
+      img {
+        margin-top: -15px;
+      }
+    }
+  }
+
+  #cc-form{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: 'db_heavent', Helvetica, sans-serif;
+
+    @media screen and (max-width: @screen-sm) {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
+
+    @media(max-width: @screen-xs-max){
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
+    label{
+      font-size: 22px;
+      font-weight: normal;
+    }
+    input{
+      background-color: @input-bg-color;
+      box-shadow: none;
+      border-color: @input-bg-border-color;
+      font-size: 22px;
+      line-height: 1;
+      height: 50px;
+      padding: 5px 15px;
+      margin-bottom: 15px;
+    }
+    input[type='file'] {
+      padding: 0;
+      height: auto;
+      background: transparent;
+    }
+    .select-custom{
+      background-color: @input-bg-color;
+      border: 1px solid @input-bg-border-color;
+      border-radius: 3px;
+      width: 100%;
+      height: 50px;
+      text-align: left;
+      &:after{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+      }
+      span{
+        font-size: 22px;
+        background: none;
+        color: #999;
+        &.caret{
+          position: absolute;
+          right: 15px;
+          top: 50%;
+        }
+      }
+    }
+    ul.dropdown-menu{
+      font-size: 20px;
+      font-weight: 300;
+      width: 100%;
+    }
+    textarea{
+      height: 250px;
+      background-color: @input-bg-color;
+      box-shadow: none;
+      border-color: @input-bg-border-color;
+      padding: 10px;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    small{
+      color: red;
+      font-size: 16px;
+      display: none;
+    }
+    #send-btn-wrapper{
+      display: inline-block;
+      float: right;
+      position: relative;
+      @media(max-width: @screen-xs-max){
+        left: 50%;
+        margin-left: -70px;
+        float: none;
+      }
+      &:before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: transparent url("../images/customer-care/send-ico.png") no-repeat;
+        background-size: 100%;
+        top: 50%;
+        margin-top: -17px;
+        left: 40px;
+        @media screen and (max-width: 520px) {
+          margin-top: -22px;
+          left: 25px;
+        }
+      }
+      @media(max-width: @screen-xs-max){
+        text-align: center;
+        padding: 0 0 10px;
+      }
+      #submitBtn{
+        background: black;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 8px 25px 9px 60px;
+        border: none;
+        color: white;
+        border-radius: 30px;
+        &:hover, &:focus{
+          outline: none;
+          text-decoration: none;
+        }
+      }
+    }
+    #filesUpload{
+      @media(max-width: @screen-xs-max){
+        text-align: center;
+      }
+      label{
+        font-size: 26px;
+        font-weight: 300;
+        cursor: pointer;
+        @media(max-width: @screen-xs-max){
+          padding: 10px 0;
+        }
+        span{
+          margin-left: 5px;
+          text-decoration: underline;
+        }
+      }
+    }
+    #fileToUpload{
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    #attachment{
+      font-size: 24px;
+      line-height: 2;
+      a{
+        color: @cc-red;
+        text-decoration: underline;
+      }
+      @media(max-width: @screen-xs-max){
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+    select {
+      width: 100%;
+      height: 50px;
+    }
+  }
+
+  #thank-body{
+    padding: 40px 0;
+    font-family: 'db_heavent', Helvetica, sans-serif;
+    p{
+      font-size: 24px;
+      text-decoration: underline;
+    }
+  }
+}

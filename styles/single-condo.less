@@ -1,0 +1,31 @@
+@import "variables";
+
+//Var
+@condo-dark: #181818;
+@condo-def-green: #bed630;
+
+#primary.condo{
+  #hero-image{
+    margin-bottom: 0;
+  }
+  #condo-gallery{
+    background-color: @condo-dark;
+    padding: @global-padding 0 (@global-padding*2);
+    .section-title{
+      color: white;
+      font-size: 2.5em;
+      font-weight: normal;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        width: 180px;
+        height: 2px;
+        background-color: @condo-def-green;
+        bottom: 0;
+        left: 50%;
+        margin-left: -90px;
+      }
+    }
+  }
+}

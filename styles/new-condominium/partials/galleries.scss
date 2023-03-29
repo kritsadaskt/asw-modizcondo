@@ -1,0 +1,117 @@
+@import "vars";
+
+#galleries {
+  padding: 60px 0 80px;
+  background-color: $main-color;
+  .section-title {
+    .title {
+      color: white;
+    }
+  }
+  .nav {
+    margin: 0 0 30px;
+    display: flex;
+    border-bottom: none;
+    justify-content: center;
+    li {
+      a {
+        color: #ccc;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid transparent;
+        &:hover, &:focus {
+          color: white;
+          background-color: transparent;
+          border-bottom-color: white;
+        }
+      }
+      &.active {
+        a {
+          color: white;
+          background-color: transparent;
+          border-bottom-color: white;
+        }
+      }
+    }
+  }
+
+  .tabs-contents {
+    .gallery-detail {
+      .swiper-container {
+        .swiper-slide {
+          background-size: cover;
+          background-position: center;
+        }
+        &.gallery-top {
+          margin-bottom: 30px;
+          .swiper-slide {
+            min-height: 500px;
+            //background-color: $main-color;
+            img {
+              height: 100%;
+              display: block;
+              margin: 0 auto;
+            }
+            @media screen and (max-width: $screen-sm) {
+              height: 420px;
+            }
+            @media screen and (max-width: $screen-xs) {
+              height: 250px;
+            }
+          }
+        }
+        &.gallery-thumbs {
+          .swiper-slide {
+            height: 100px;
+            width: 100px;
+            @media screen and (max-width: $screen-xs) {
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+    .gallery-top {
+      margin-bottom: 30px;
+      a {
+        img {
+          height: 650px;
+          margin: 0 auto;
+          @media screen and (max-width: $screen-sm) {
+            height: 450px;
+          }
+          @media screen and (max-width: $screen-xs) {
+            height: 200px;
+          }
+        }
+      }
+    }
+    .gallery-thumbs {
+      .slide {
+        height: 80px;
+        margin: 0 5px;
+        background-size: cover;
+        outline: transparent;
+        background-position: center;
+        border: 3px solid transparent;
+        background-repeat: no-repeat;
+        @media screen and (max-width: $screen-xs) {
+          height: 40px;
+        }
+        &.slick-current.slick-active {
+          border-color: #fff;
+        }
+      }
+      .slick-arrow {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

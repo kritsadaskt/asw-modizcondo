@@ -1,0 +1,76 @@
+@import "../../variables";
+
+#info-section {
+  .inner {
+    .tab-bar {
+      ul {
+        margin: 0;
+        padding: 5px 15px 15px;
+        list-style-type: none;
+        li {
+          display: inline-block;
+          a{
+            padding: 10px 0 3px;
+            margin: 0 10px;
+            font-size: 24px;
+            display: inline-block;
+            font-weight: 300;
+            line-height: normal;
+            border-bottom: 2px solid transparent;
+            @media (max-width: @screen-xs) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      .tab-pane {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .info-box {
+          width: 400px;
+          min-height: 600px;
+          color: #fff;
+          padding: 40px;
+          float: right;
+          margin-right: 50px;
+          font-size: 20px;
+          line-height: normal;
+
+          @media (max-width: @screen-sm) {
+            width: 350px;
+            min-height: 400px;
+            margin-right: 20px;
+          }
+
+          @media (max-width: @screen-xs) {
+            width: 100%;
+            margin-right: 0;
+          }
+
+          strong {
+            font-weight: 600;
+          }
+
+          ul{
+            margin-left: 0;
+          }
+          h1 {
+            font-size: 48px;
+          }
+          h2 {
+            font-size: 36px;
+          }
+          h3 {
+            font-size: 32px;
+          }
+          h4 {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}

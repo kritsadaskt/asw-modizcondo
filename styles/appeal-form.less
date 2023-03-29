@@ -1,0 +1,320 @@
+@color_1: #fff;
+@color_2: #bebebe;
+@color_3: #009edb;
+@color_4: white;
+@color_5: darkgrey;
+@color_6: #999;
+@color_7: red;
+@color_8: #a92722;
+@font_family_1: 'db_heavent', Helvetica, sans-serif;
+@background_color_1: #00a0d2;
+@background_color_2: unset;
+@background_color_3: black;
+@background_color_4: #f5f6f8;
+@border_color_1: #e9eaec;
+
+#appeal-form {
+  #hero-image {
+    height: 336px;
+    background: #000 url("../images/appeal-form/banner-appeal-form.jpg") center no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    @media (max-width: 480px) {
+      background-size: 130%;
+      background-position: center;
+    }
+  }
+  #ap-form {
+    padding-bottom: 80px;
+    font-family: @font_family_1;
+    .sec-topicbar {
+      height: 80px;
+      font-size: 32px;
+      background: #202020 url('../images/topicbar.jpg');
+      background-size: cover;
+      font-family: @font_family_1;
+      .topicbar-left {
+        height: 50px;
+        margin-top: 15px;
+        line-height: 50px;
+        text-align: left;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+        color: @color_1;
+        .t-grey {
+          color: @color_2;
+        }
+        .t-grey-bold {
+          color: @color_2;
+          font-size: 1.1em;
+          font-weight: 500;
+        }
+        .t-blue {
+          color: @color_3;
+          font-weight: 500;
+        }
+      }
+      .topicbar-right {
+        position: absolute;
+        float: right;
+        margin-right: 15px;
+        top: 0;
+        right: 0;
+        img {
+          height: 80px;
+          opacity: 0.8;
+        }
+      }
+    }
+    label {
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 0;
+      line-height: 1;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media (max-width: 480px) {
+        margin-bottom: 3px;
+      }
+    }
+    input[type="radio"] {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      background-color: @background_color_1;
+    }
+    input[type="file"] {
+      background-color: @background_color_2;
+      font-size: 24px;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    #choose {
+      font-size: 30px;
+      background-color: black;
+      color: white;
+      padding: 1px 20px;
+      border-radius: 10px;
+      font-weight: 300;
+    }
+    img.clip {
+      margin-top: -5px;
+      margin-right: 5px;
+      margin-left: 15px;
+    }
+    input {
+      background-color: @background_color_4;
+      box-shadow: none;
+      border-color: @border_color_1;
+      font-size: 22px;
+      line-height: 1;
+      height: 40px;
+      padding: 5px 15px;
+      &::placeholder {
+        font-size: 22px;
+        font-weight: 300;
+      }
+    }
+    textarea {
+      &::placeholder {
+        font-size: 22px;
+        //color: @color_5;
+        font-weight: 300;
+      }
+      height: 200px;
+      background-color: @background_color_4;
+      box-shadow: none;
+      border-color: @border_color_1;
+      padding: 10px;
+      font-size: 22px;
+      font-weight: 300;
+    }
+    .select-custom {
+      background-color: @background_color_4;
+      border: 1px solid #e9eaec;
+      border-radius: 3px;
+      width: 100%;
+      height: 50px;
+      text-align: left;
+      &:after {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+      }
+      span {
+        font-size: 22px;
+        background: none;
+        color: @color_6;
+      }
+      span.caret {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+      }
+    }
+    ul.dropdown-menu {
+      font-size: 20px;
+      font-weight: 300;
+      width: 100%;
+    }
+    small {
+      color: @color_7;
+      font-size: 16px;
+      display: none;
+    }
+    #appeal_type_dropdown_wrapper {
+      width: 400px;
+      @media (max-width: 520px) {
+        width: 100%;
+      }
+      #appeal_dropdown {
+        text-align: left;
+        font-size: 20px;
+        line-height: normal;
+        padding: 5px 15px;
+        .caret {
+          margin-left: 15px;
+        }
+      }
+    }
+    #send-btn-wrapper {
+      display: inline-block;
+      margin-top: 20px;
+      position: relative;
+      transition: transform 250ms ease-in-out;
+      &:hover, &:focus {
+        transform: scale(1.05);
+        transition: transform 250ms ease-in-out;
+      }
+      &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: transparent url("../images/customer-care/send-ico.png") no-repeat;
+        background-size: 100%;
+        top: 50%;
+        margin-top: -15px;
+        left: 65px;
+      }
+      #submitBtn {
+        background: black;
+        font-size: 30px;
+        font-weight: normal;
+        padding: 8px 80px 9px 100px;
+        border: none;
+        color: @color_4;
+        border-radius: 10px;
+        height: auto;
+        &:hover {
+          outline: none;
+          text-decoration: none;
+        }
+        &:focus {
+          outline: none;
+          text-decoration: none;
+        }
+      }
+    }
+    #filesUpload {
+      label {
+        font-size: 26px;
+        font-weight: 300;
+        cursor: pointer;
+        span {
+          margin-left: 5px;
+          text-decoration: underline;
+        }
+      }
+    }
+    #fileToUpload {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    #attachment {
+      font-size: 24px;
+      line-height: 2;
+      a {
+        color: @color_8;
+        text-decoration: underline;
+      }
+    }
+  }
+  #thank-body {
+    padding: 40px 0;
+    font-family: @font_family_1;
+    p {
+      font-size: 24px;
+      text-decoration: underline;
+    }
+  }
+}
+h2 {
+  font-size: 30px;
+  padding-bottom: 0;
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+  @media (max-width: 480px) {
+    font-size: 26px;
+  }
+}
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  border-color: #9a9a9a;
+}
+#warning-message {
+  font-size: 24px;
+  padding-top: 5px;
+  font-weight: 300;
+  @media (max-width: 480px) {
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+@media (max-width: 979px) {
+  #appeal-form {
+    #hero-image {
+      height: 300px;
+      background-size: cover;
+      background-position: right;
+    }
+  }
+}
+@media (max-width: 767px) {
+  #appeal-form {
+    #hero-image {
+      height: 180px;
+      background-position: center;
+      background-size: 200%;
+    }
+    #ap-form {
+      padding-top: 0;
+      padding-bottom: 20px;
+      #send-btn-wrapper {
+        margin-top: 30px;
+        text-align: center;
+        padding: 0 0 10px;
+      }
+      #filesUpload {
+        text-align: center;
+        label {
+          padding: 10px 0;
+        }
+      }
+      #attachment {
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,297 @@
+body {
+  font-family: "Noto Sans SC", "db_heavent", sans-serif;
+  font-size: 12px;
+
+  #hero-image {
+    margin-bottom: 3.5rem;
+  }
+
+  &#condominium {
+    #condo_nav {
+      li {
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .tab-content {
+      .filter_area_pane {
+        h3 {
+          font-size: 26px;
+          font-weight: normal;
+          margin-bottom: 20px;
+        }
+        .options-wrapper {
+          .checkbox {
+            font-size: 16px;
+          }
+        }
+        .filter_area_submit_pane {
+          #filter_area_submit_btn {
+            font-size: 24px;
+            padding: 10px 35px;
+          }
+        }
+      }
+    }
+
+    .project {
+      .item-wrapper {
+        .item-detail {
+          h4 {
+            font-size: 22px;
+            font-weight: bold;
+          }
+          .location {
+            font-size: 16px;
+          }
+          .project-desc {
+            font-size: 15px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  .line-2 {
+    ul {
+      li {
+        a {
+          font-size: 16px;
+          line-height: normal;
+          font-family: "Noto Sans SC", "db_heavent", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+#home {
+  #home-headline {
+    h1 {
+      font-size: 3em;
+    }
+  }
+  #main {
+    #condo_nav li {
+      a {
+        font-size: 24px;
+      }
+    }
+    .tab-content {
+      .filter_area_pane {
+        h3 {
+          font-size: 26px;
+          font-weight: normal;
+          margin-bottom: 20px;
+        }
+        .options-wrapper {
+          .checkbox {
+            font-size: 16px;
+          }
+        }
+        .filter_area_submit_pane {
+          #filter_area_submit_btn {
+            font-size: 24px;
+            padding: 10px 35px;
+          }
+        }
+      }
+    }
+  }
+  #projects-type-select .project-type .button-text-wrapper p {
+    font-size: 2.5em;
+    line-height: normal;
+    margin-bottom: 4px;
+  }
+  #main .project .item-wrapper .item-detail h4 {
+    font-size: 22px;
+  }
+  #main .project .item-wrapper .item-detail .project-desc {
+    font-size: 16px;
+  }
+}
+
+#content {
+  .sec-topicbar {
+    .topicbar-left {
+      .t-grey {
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+#primary.condo {
+  section {
+    .inner {
+      .section-title {
+        font-size: 2.8rem;
+        padding-bottom: 10px;
+        line-height: normal;
+        font-weight: bold;
+      }
+    }
+  }
+
+  #hero-banner {
+    #register-box {
+      #reg-form {
+        input[type='text'], input[type='tel'], input[type='email'] {
+          font-size: 18px;
+        }
+        #submit {
+          font-size: 28px;
+          padding: 8px 15px;
+        }
+        .telbox_wrapper {
+          .telbox {
+            font-size: 24px;
+            font-weight: bold;
+          }
+        }
+        #acceptPolicyCheckboxWrapper {
+          label {
+            font-size: 12px;
+            font-weight: normal;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #project-gallery {
+    .inner {
+      #main-gallery-slider, #addition-gallery-slider, #unit-gallery-slider {
+        .slides {
+          li {
+            .gallery-image {
+              .gallery-overlay {
+                font-size: 14px;
+                right: 10px;
+                bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #info-section {
+    .inner {
+      .tab-content {
+        .tab-pane {
+          .info-box {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  #progress-section {
+    .inner {
+      .progress-wrapper {
+        .gallery-progress {
+          .progress-item {
+            p {
+              font-size: 16px;
+              margin-top: 5px;
+            }
+            h4 {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact-section {
+  .inner {
+    .contact-content {
+      .contact-side {
+        .contact-info {
+          a.telbox {
+            padding: 5px 15px;
+            border-width: 3px;
+            font-size: 22px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 18px;
+          }
+          .social-btn-container {
+            a.social-btn {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer-nav {
+  #footer-wrapper {
+    .footer-menu-title {
+      padding-bottom: 15px;
+      font-size: 24px;
+    }
+    .footer-project-title {
+      font-size: 20px;
+    }
+    .footer-menu-wrapper {
+      ul {
+        li {
+          padding-bottom: 3px;
+          a {
+            font-size: 16px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .footer-contact-wrapper {
+      .footer-call {
+        a {
+          font-size: 22px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+footer#colophon {
+  #footer-tel {
+    span {
+      font-size: 22px;
+    }
+  }
+}
+
+#cookie-accept-popup {
+  .inner {
+    p {
+      font-size: 18px;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+    }
+    button {
+      font-size: 18px;
+    }
+  }
+}

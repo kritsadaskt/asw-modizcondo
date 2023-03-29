@@ -1,0 +1,146 @@
+@import "vars";
+
+#masthead {
+  .line-2 {
+    @media screen and (min-width: 521px) {
+      display: none;
+    }
+  }
+}
+
+#header-space {
+  height: 150px;
+}
+
+h2.section-title {
+  text-align: center;
+  margin: 0 0 2.5rem;
+
+  span.title {
+    font-size: 36px;
+    padding: 0 20px;
+    letter-spacing: 2px;
+    border-left: 4px solid $secondary-color;
+    border-right: 4px solid $secondary-color;
+    @media screen and (max-width: $screen-xs) {
+      font-size: 30px;
+      padding: 0 10px;
+    }
+  }
+}
+
+#projectLogo {
+  width: 130px;
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: 0;
+  .swiper-pagination-bullet-active {
+    background-color: $main-color;
+  }
+}
+
+#header-space {
+  height: 145px;
+  @media screen and (max-width: 1366px) and (orientation: landscape) {
+    height: 145px;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 145px;
+  }
+  @media screen and (max-width: $screen-sm) {
+    height: 140px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    height: 70px;
+  }
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  color: #fff;
+  font-weight: 300;
+  opacity: 0.7;
+  font-size: 22px;
+  @media screen and (max-width: $screen-xs) {
+    opacity: 1;
+    font-size: 12px;
+  }
+}
+
+//Custom Style - Select Fields
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-weight: 300;
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+  }
+  //font-family: Arial;
+  select {
+    display: none; /*hide original SELECT element: */
+  }
+  .select-selected {
+    background-color: transparent;
+  }
+
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: 5px;
+    width: 12px;
+    height: 8px;
+    background: transparent url("../../images/ico/arrow_down.png") center/contain no-repeat;
+  }
+
+  /* Point the arrow upwards when the select box is open (active): */
+  //.select-selected.select-arrow-active:after {
+  //  border-color: transparent transparent $main-color transparent;
+  //  top: 7px;
+  //}
+
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: $main-color;
+    padding: 8px 0;
+    //border: 1px solid transparent;
+    border-width: 2px;
+    border-style: none none solid none;
+    border-color: transparent transparent $main-color transparent;
+    cursor: pointer;
+  }
+
+  .select-items div {
+    padding: 8px 16px;
+    border: none;
+  }
+
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid #eee;
+  }
+
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: #f7f7f7;
+  }
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}

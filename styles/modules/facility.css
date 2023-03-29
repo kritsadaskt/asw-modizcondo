@@ -1,0 +1,111 @@
+#facility_module .tabs-control .nav {
+  margin: 0 0 20px;
+  display: flex;
+  border-bottom: none;
+  justify-content: center;
+}
+@media screen and (max-width: 520px) {
+  #facility_module .tabs-control .nav {
+    display: block;
+  }
+}
+#facility_module .tabs-control .nav li a {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid transparent;
+}
+#facility_module .tabs-control .nav li a:hover, #facility_module .tabs-control .nav li a:focus {
+  background-color: transparent;
+}
+@media screen and (max-width: 520px) {
+  #facility_module .tabs-contents {
+    padding: 0;
+  }
+}
+#facility_module .tabs-contents .tab-content .tab-pane {
+  padding: 0;
+}
+#facility_module .tabs-contents .fac-card {
+  display: flex;
+}
+@media screen and (max-width: 520px) {
+  #facility_module .tabs-contents .fac-card {
+    flex-direction: column;
+  }
+}
+#facility_module .tabs-contents .fac-detail {
+  width: 40%;
+  float: left;
+  padding: 6rem 6rem 0;
+}
+@media screen and (max-width: 768px) {
+  #facility_module .tabs-contents .fac-detail {
+    padding: 3rem 3rem 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  #facility_module .tabs-contents .fac-detail {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+#facility_module .tabs-contents .fac-detail h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+@media screen and (max-width: 520px) {
+  #facility_module .tabs-contents .fac-detail h4 {
+    margin-top: 0;
+  }
+}
+#facility_module .tabs-contents .fac-detail .txt {
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 15px;
+  border-left: 3px solid white;
+}
+#facility_module .tabs-contents .fac-img {
+  width: 60%;
+  float: right;
+  height: 450px;
+  background-size: cover;
+  background-position: right bottom;
+  position: relative;
+}
+#facility_module .tabs-contents .fac-img::before {
+  content: "COMPUTER GENERATED IMAGE";
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  right: 5px;
+  font-weight: normal;
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  #facility_module .tabs-contents .fac-img::before {
+    font-size: 8px;
+    bottom: 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #facility_module .tabs-contents .fac-img {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 520px) {
+  #facility_module .tabs-contents .fac-img {
+    width: 100%;
+    height: 220px;
+  }
+}
+#facility_module #facSlider_m {
+  padding-bottom: 40px;
+}
+#facility_module #facSlider_m .swiper-pagination {
+  bottom: 5px;
+}
+
+/*# sourceMappingURL=facility.css.map */

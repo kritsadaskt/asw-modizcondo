@@ -1,0 +1,91 @@
+@import "vars";
+
+#project_details {
+  padding: 50px 0 30px;
+  .header {
+    margin-bottom: 35px;
+  }
+  .detail-box{
+    background-color: $secondary-color;
+    .project-detail-img {
+      position: relative;
+      img {
+        position: absolute;
+        width: 85%;
+        top: -40px;
+        box-shadow: -60px -60px 0 $main-color;
+        @media screen and (max-width: $screen-sm) {
+          top: 0;
+          box-shadow: -30px -30px 0 $main-color;
+        }
+        @media screen and (max-width: $screen-xs) {
+          position: relative;
+          width: 100%;
+        }
+      }
+    }
+    .project-detail-txt {
+      .inner {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 30px 0;
+        @media screen and (max-width: $screen-sm) {
+          font-size: 15px;
+          padding: 20px 0 40px;
+        }
+        @media screen and (max-width: $screen-xs) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 320px) {
+          font-size: 14px;
+        }
+
+        .project-detail-listed {
+          @media screen and (max-width: $screen-xs) {
+            margin-bottom: 15px;
+          }
+        }
+        .project-detail-item {
+          text-indent: 10px;
+        }
+      }
+    }
+  }
+  .download-brochure{
+    padding: 30px 0 50px;
+    text-align: center;
+    @media screen and (max-width: $screen-sm) {
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: $screen-xs) {
+      padding: 20px 0;
+      font-size: 24px;
+    }
+    a {
+      color: white;
+      display: inline-block;
+      background-color: $main-color;
+      padding: 5px 30px;
+      font-size: 24px;
+      border: none;
+      border-radius: 7px;
+      margin: 0 auto;
+      position: relative;
+      width: 210px;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 24px;
+      }
+      &::after {
+        content: "";
+        right: 8px;
+        top: 15px;
+        width: 4px;
+        height: 50px;
+        position: absolute;
+        background-color: white;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

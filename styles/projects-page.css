@@ -1,0 +1,576 @@
+body#condominium #content,
+body#house #content {
+  background-color: #f6f6f6;
+}
+body#condominium #top-slider,
+body#house #top-slider {
+  margin-bottom: 0;
+}
+body#condominium .mobile-header,
+body#house .mobile-header {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+body#condominium .mobile-header .navbar-header span.menu-title,
+body#house .mobile-header .navbar-header span.menu-title {
+  font-size: 30px;
+  padding: 10px 0;
+  display: inline-block;
+  line-height: 1;
+}
+body#condominium .mobile-header .navbar-header button,
+body#house .mobile-header .navbar-header button {
+  margin-right: 0;
+  background-color: #202020;
+}
+body#condominium .mobile-header .navbar-header button .icon-bar,
+body#house .mobile-header .navbar-header button .icon-bar {
+  background-color: #fff;
+}
+body#condominium #condo_nav,
+body#house #condo_nav {
+  margin: 0 auto 30px;
+  max-width: 90%;
+}
+@media (max-width: 979px) {
+  body#condominium #condo_nav,
+  body#house #condo_nav {
+    max-height: 100%;
+  }
+}
+body#condominium #condo_nav li a,
+body#house #condo_nav li a {
+  color: #545456;
+  font-size: 26px;
+  border-radius: 0;
+  line-height: 1;
+  padding: 25px 25px 25px 70px;
+}
+body#condominium #condo_nav li a:hover,
+body#house #condo_nav li a:hover {
+  color: #fff;
+  background-color: #545456;
+}
+@media (max-width: 979px) {
+  body#condominium #condo_nav li a,
+  body#house #condo_nav li a {
+    font-size: 24px;
+    padding: 25px 0 25px 30px;
+  }
+}
+body#condominium #condo_nav li a:before,
+body#house #condo_nav li a:before {
+  content: '';
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45px;
+  height: 35px;
+  position: absolute;
+  left: 13%;
+  top: 20%;
+}
+@media (max-width: 979px) {
+  body#condominium #condo_nav li a:before,
+  body#house #condo_nav li a:before {
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    left: 7%;
+    top: 30%;
+  }
+}
+body#condominium #condo_nav li a#new_project_menu,
+body#house #condo_nav li a#new_project_menu {
+  position: relative;
+}
+body#condominium #condo_nav li a#new_project_menu:before,
+body#house #condo_nav li a#new_project_menu:before {
+  background-image: url("../images/condominium/new_project_icon.png");
+}
+body#condominium #condo_nav li a#new_project_menu:hover:before,
+body#house #condo_nav li a#new_project_menu:hover:before {
+  background-image: url("../images/condominium/new_project_icon_hover.png");
+}
+body#condominium #condo_nav li a#ready_menu,
+body#house #condo_nav li a#ready_menu {
+  position: relative;
+}
+body#condominium #condo_nav li a#ready_menu:before,
+body#house #condo_nav li a#ready_menu:before {
+  background-image: url("../images/condominium/ready_projects_icon.png");
+}
+body#condominium #condo_nav li a#ready_menu:hover:before,
+body#house #condo_nav li a#ready_menu:hover:before {
+  background-image: url("../images/condominium/ready_projects_icon_hover.png");
+}
+body#condominium #condo_nav li a#filter_menu,
+body#house #condo_nav li a#filter_menu {
+  position: relative;
+}
+body#condominium #condo_nav li a#filter_menu:before,
+body#house #condo_nav li a#filter_menu:before {
+  background-image: url("../images/condominium/area_menu_icon.png");
+}
+body#condominium #condo_nav li a#filter_menu:hover:before,
+body#house #condo_nav li a#filter_menu:hover:before {
+  background-image: url("../images/condominium/area_menu_icon_hover.png");
+}
+body#condominium #condo_nav li a#our_project_menu,
+body#house #condo_nav li a#our_project_menu {
+  position: relative;
+}
+body#condominium #condo_nav li a#our_project_menu:before,
+body#house #condo_nav li a#our_project_menu:before {
+  background-image: url("../images/condominium/our_projects_icon.png");
+}
+body#condominium #condo_nav li a#our_project_menu:hover:before,
+body#house #condo_nav li a#our_project_menu:hover:before {
+  background-image: url("../images/condominium/our_projects_icon_hover.png");
+}
+body#condominium #condo_nav li.active a,
+body#house #condo_nav li.active a {
+  color: #fff;
+  background-color: #545456;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
+body#condominium #condo_nav li.active a#new_project_menu:before,
+body#house #condo_nav li.active a#new_project_menu:before {
+  background-image: url("../images/condominium/new_project_icon_hover.png");
+}
+body#condominium #condo_nav li.active a#ready_menu:before,
+body#house #condo_nav li.active a#ready_menu:before {
+  background-image: url("../images/condominium/ready_projects_icon_hover.png");
+}
+body#condominium #condo_nav li.active a#filter_menu:before,
+body#house #condo_nav li.active a#filter_menu:before {
+  background-image: url("../images/condominium/area_menu_icon_hover.png");
+}
+body#condominium #condo_nav li.active a#our_project_menu:before,
+body#house #condo_nav li.active a#our_project_menu:before {
+  background-image: url("../images/condominium/our_projects_icon_hover.png");
+}
+body#condominium .tab-content,
+body#house .tab-content {
+  position: relative;
+}
+body#condominium .tab-content .tab-pane.active #filter_area_pane,
+body#house .tab-content .tab-pane.active #filter_area_pane {
+  display: block;
+}
+body#condominium .tab-content .tab-pane #desktop-list:before,
+body#house .tab-content .tab-pane #desktop-list:before {
+  -webkit-transition: all 150ms;
+  -khtml-transition: all 150ms;
+  -moz-transition: all 150ms;
+  transition: all 150ms;
+}
+body#condominium .tab-content .tab-pane #desktop-list.loading,
+body#house .tab-content .tab-pane #desktop-list.loading {
+  position: relative;
+}
+body#condominium .tab-content .tab-pane #desktop-list.loading:before,
+body#house .tab-content .tab-pane #desktop-list.loading:before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: rgba(246, 246, 246, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  -webkit-transition: all 200ms;
+  -khtml-transition: all 200ms;
+  -moz-transition: all 200ms;
+  transition: all 200ms;
+}
+body#condominium .tab-content .filter_area_pane,
+body#house .tab-content .filter_area_pane {
+  background-color: rgba(35, 31, 32, 0.95);
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  top: -30px;
+  padding: 20px 15px 30px;
+  display: none;
+  height: 320px;
+}
+@media (max-width: 979px) {
+  body#condominium .tab-content .filter_area_pane,
+  body#house .tab-content .filter_area_pane {
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  body#condominium .tab-content .filter_area_pane,
+  body#house .tab-content .filter_area_pane {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+  }
+}
+body#condominium .tab-content .filter_area_pane .close,
+body#house .tab-content .filter_area_pane .close {
+  color: white;
+  opacity: 1;
+}
+body#condominium .tab-content .filter_area_pane h3,
+body#house .tab-content .filter_area_pane h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper,
+body#house .tab-content .filter_area_pane .options-wrapper {
+  overflow: auto;
+  max-width: 50%;
+  margin: 0 auto;
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+}
+@media (max-width: 979px) {
+  body#condominium .tab-content .filter_area_pane .options-wrapper,
+  body#house .tab-content .filter_area_pane .options-wrapper {
+    max-width: 70%;
+  }
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox,
+body#house .tab-content .filter_area_pane .options-wrapper .checkbox {
+  font-weight: 300;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (max-width: 480px) {
+  body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox,
+  body#house .tab-content .filter_area_pane .options-wrapper .checkbox {
+    padding-left: 32px;
+    margin-bottom: 7px;
+    font-size: 16px;
+  }
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox input,
+body#house .tab-content .filter_area_pane .options-wrapper .checkbox input {
+  margin-left: 0;
+  margin-right: 10px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox .checkmark,
+body#house .tab-content .filter_area_pane .options-wrapper .checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox:hover input ~ .checkmark,
+body#house .tab-content .filter_area_pane .options-wrapper .checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox input:checked ~ .checkmark,
+body#house .tab-content .filter_area_pane .options-wrapper .checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkmark:after,
+body#house .tab-content .filter_area_pane .options-wrapper .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox input:checked ~ .checkmark:after,
+body#house .tab-content .filter_area_pane .options-wrapper .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+body#condominium .tab-content .filter_area_pane .filter_area_submit_pane #filter_area_submit_btn,
+body#house .tab-content .filter_area_pane .filter_area_submit_pane #filter_area_submit_btn {
+  background-color: #3899c3;
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  padding: 5px 20px;
+  font-weight: 300;
+  margin: 10px auto;
+  border: none;
+}
+@media (min-width: 980px) {
+  body#condominium .tab-content .filter_area_pane .logo-slider,
+  body#house .tab-content .filter_area_pane .logo-slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 979px) {
+  body#condominium .tab-content .filter_area_pane .logo-slider,
+  body#house .tab-content .filter_area_pane .logo-slider {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+body#condominium .tab-content .filter_area_pane .logo-slider img,
+body#house .tab-content .filter_area_pane .logo-slider img {
+  opacity: 0.25;
+}
+body#condominium .tab-content .filter_area_pane .logo-slider img:focus,
+body#house .tab-content .filter_area_pane .logo-slider img:focus {
+  outline: none;
+}
+body#condominium .tab-content .filter_area_pane .logo-slider img.slick-current,
+body#house .tab-content .filter_area_pane .logo-slider img.slick-current {
+  opacity: 1;
+}
+body#condominium .project,
+body#house .project {
+  margin-bottom: 30px;
+  -webkit-transition: transform 360ms;
+  -khtml-transition: transform 360ms;
+  -moz-transition: transform 360ms;
+  transition: transform 360ms;
+}
+@media (min-width: 980px) {
+  body#condominium .project,
+  body#house .project {
+    min-height: 380px;
+  }
+}
+body#condominium .project .item-wrapper,
+body#house .project .item-wrapper {
+  overflow: auto;
+  display: block;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 0 #ddd;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: 0.5px solid #dcdbdb;
+  border-right: 0.5px solid #dcdbdb;
+  border-top: 0.5px solid #dcdbdb;
+}
+body#condominium .project .item-wrapper:hover,
+body#house .project .item-wrapper:hover,
+body#condominium .project .item-wrapper:focus,
+body#house .project .item-wrapper:focus {
+  text-decoration: none;
+}
+body#condominium .project .item-wrapper .item-detail,
+body#house .project .item-wrapper .item-detail {
+  padding: 20px;
+}
+body#condominium .project .item-wrapper .item-detail h4,
+body#house .project .item-wrapper .item-detail h4 {
+  color: #313131;
+  font-size: 32px;
+  line-height: 1;
+  margin-top: 5px;
+}
+body#condominium .project .item-wrapper .item-detail .location,
+body#house .project .item-wrapper .item-detail .location {
+  color: #707070;
+  font-size: 19px;
+  padding-bottom: 20px;
+  position: relative;
+}
+body#condominium .project .item-wrapper .item-detail .location:before,
+body#house .project .item-wrapper .item-detail .location:before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #069edb;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -30px;
+}
+body#condominium .project .item-wrapper .item-detail .project-desc,
+body#house .project .item-wrapper .item-detail .project-desc {
+  color: #4a4a4a;
+  font-size: 20px;
+}
+body#condominium .project.not-show,
+body#house .project.not-show {
+  -webkit-transform: scale(0);
+  -khtml-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform 320ms;
+  -khtml-transition: transform 320ms;
+  -moz-transition: transform 320ms;
+  transition: transform 320ms;
+}
+body#condominium #all-projects .slick-arrow,
+body#house #all-projects .slick-arrow {
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+}
+@media (max-width: 480px) {
+  body#condominium #all-projects .slick-arrow,
+  body#house #all-projects .slick-arrow {
+    width: 35px;
+    height: 35px;
+    top: 30%;
+  }
+}
+@media (max-width: 480px) and (max-width: 480px) {
+  body#condominium #all-projects .slick-arrow:before,
+  body#house #all-projects .slick-arrow:before {
+    font-size: 15px;
+  }
+}
+body#condominium #all-projects .slick-arrow.slick-prev,
+body#house #all-projects .slick-arrow.slick-prev {
+  left: 25px;
+}
+@media (max-width: 480px) {
+  body#condominium #all-projects .slick-arrow.slick-prev,
+  body#house #all-projects .slick-arrow.slick-prev {
+    left: 10px;
+  }
+}
+body#condominium #all-projects .slick-arrow.slick-prev:before,
+body#house #all-projects .slick-arrow.slick-prev:before {
+  font-family: 'FontAwesome', sans-serif;
+  content: "\f053";
+}
+body#condominium #all-projects .slick-arrow.slick-next,
+body#house #all-projects .slick-arrow.slick-next {
+  right: 25px;
+}
+@media (max-width: 480px) {
+  body#condominium #all-projects .slick-arrow.slick-next,
+  body#house #all-projects .slick-arrow.slick-next {
+    right: 10px;
+  }
+}
+body#condominium #all-projects .slick-arrow.slick-next:before,
+body#house #all-projects .slick-arrow.slick-next:before {
+  font-family: 'FontAwesome', sans-serif;
+  content: "\f054";
+}
+body#condominium #all-projects .slick-dots,
+body#house #all-projects .slick-dots {
+  width: 100%;
+}
+body#condominium #all-projects .slick-dots li,
+body#house #all-projects .slick-dots li {
+  width: 20px;
+}
+body#condominium #all-projects .slick-dots li.slick-active button::before,
+body#house #all-projects .slick-dots li.slick-active button::before {
+  font-size: 13px;
+}
+body#condominium #all-projects .project,
+body#house #all-projects .project {
+  margin-bottom: 20px;
+  float: left;
+}
+@media (max-width: 480px) {
+  body#condominium #all-projects .project,
+  body#house #all-projects .project {
+    margin-bottom: 25px;
+    padding: 0;
+  }
+}
+body#condominium #all-projects .project a,
+body#house #all-projects .project a {
+  color: black;
+  font-family: 'db_heavent', sans-serif, Helvetica;
+  border-bottom: 2px solid #ededed;
+  display: block;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  body#condominium #all-projects .project a,
+  body#house #all-projects .project a {
+    border-bottom: none;
+  }
+  body#condominium #all-projects .project a h4,
+  body#house #all-projects .project a h4,
+  body#condominium #all-projects .project a p,
+  body#house #all-projects .project a p {
+    padding: 0 15px;
+  }
+}
+body#condominium #all-projects .project a:hover,
+body#house #all-projects .project a:hover {
+  text-decoration: none;
+}
+body#condominium #all-projects .project a h4,
+body#house #all-projects .project a h4 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 12px 0 0;
+  line-height: 1;
+}
+body#condominium #all-projects .project a span,
+body#house #all-projects .project a span {
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 5px;
+}
+@media (max-width: 768px) {
+  body#condominium #all-projects .project a span,
+  body#house #all-projects .project a span {
+    display: block;
+    clear: both;
+    margin-left: 0;
+  }
+}
+body#condominium #all-projects .project a p.project-desc,
+body#house #all-projects .project a p.project-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #777;
+  width: 100%;
+  margin: 10px 0;
+  line-height: 1;
+  min-height: 36px;
+}
+@media (max-width: 768px) {
+  body#condominium #all-projects .project a p.project-desc,
+  body#house #all-projects .project a p.project-desc {
+    margin: 5px 0 8px;
+    font-size: 16px;
+  }
+}
+body#condominium #all-projects .project a .more-btn,
+body#house #all-projects .project a .more-btn {
+  display: inline-block;
+  width: 85px;
+  background-color: #7c7e81;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  height: auto;
+  line-height: 0.7;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+body#condominium #all-projects .project a .more-btn:hover,
+body#house #all-projects .project a .more-btn:hover {
+  background-color: #000;
+}
+@media (max-width: 480px) {
+  body#condominium #our_projects .filter_area_pane,
+  body#house #our_projects .filter_area_pane {
+    background: linear-gradient(#231f20 50%, transparent);
+  }
+}
+/*# sourceMappingURL=projects-page.css.map */

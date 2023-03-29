@@ -1,0 +1,120 @@
+$screen-xs : 520px;
+$screen-sm : 768px;
+$screen-md : 1024px;
+$screen-lg : 1200px;
+
+$main-color: #fff;
+$secondary-color: #0f2d52;
+
+#facility_module {
+  .tabs-control {
+    .nav {
+      margin: 0 0 20px;
+      display: flex;
+      border-bottom: none;
+      justify-content: center;
+      @media screen and (max-width: $screen-xs) {
+        display: block;
+      }
+      li {
+        a {
+          //color: #97A4B4;
+          border-radius: 0;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 4px solid transparent;
+          &:hover, &:focus {
+            //color: $main-color;
+            background-color: transparent;
+            //border-bottom-color: $secondary-color;
+          }
+        }
+        &.active {
+          a {
+            //color: $main-color;
+            //border-bottom-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .tabs-contents {
+    @media screen and (max-width: $screen-xs) {
+      padding: 0;
+    }
+    .tab-content {
+      .tab-pane {
+        padding: 0;
+      }
+    }
+    .fac-card {
+      //background-color: $secondary-color;
+      display: flex;
+      @media screen and (max-width: $screen-xs) {
+        flex-direction: column;
+      }
+    }
+    .fac-detail {
+      width: 40%;
+      float: left;
+      padding: 6rem 6rem 0;
+      //color: white;
+      @media screen and (max-width: $screen-sm) {
+        padding: 3rem 3rem 0;
+      }
+      @media screen and (max-width: $screen-xs) {
+        width: 100%;
+        padding: 2rem;
+      }
+      h4 {
+        font-size: 30px;
+        font-weight: 400;
+        @media screen and (max-width: $screen-xs) {
+          margin-top: 0;
+        }
+      }
+      .txt {
+        font-weight: 300;
+        font-size: 18px;
+        padding-left: 15px;
+        border-left: 3px solid white;
+      }
+    }
+    .fac-img {
+      width: 60%;
+      float: right;
+      height: 450px;
+      background-size: cover;
+      background-position: right bottom;
+      position: relative;
+      &::before {
+        content: 'COMPUTER GENERATED IMAGE';
+        position: absolute;
+        color: #fff;
+        font-size: 12px;
+        bottom: 0;
+        right: 5px;
+        font-weight: normal;
+        display: none;
+        @media screen and (max-width: $screen-xs) {
+          font-size: 8px;
+          bottom: 2px;
+        }
+      }
+      @media screen and (max-width: $screen-sm) {
+        height: 280px;
+      }
+      @media screen and (max-width: $screen-xs) {
+        width: 100%;
+        height: 220px;
+      }
+    }
+  }
+  #facSlider_m {
+    padding-bottom: 40px;
+    .swiper-pagination {
+      bottom: 5px;
+    }
+  }
+}

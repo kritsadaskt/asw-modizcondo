@@ -1,0 +1,312 @@
+#appeal-form #hero-image {
+  height: 336px;
+  background: #000 url("../images/appeal-form/banner-appeal-form.jpg") center no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  #appeal-form #hero-image {
+    background-size: 130%;
+    background-position: center;
+  }
+}
+#appeal-form #ap-form {
+  padding-bottom: 80px;
+  font-family: 'db_heavent', Helvetica, sans-serif;
+}
+#appeal-form #ap-form .sec-topicbar {
+  height: 80px;
+  font-size: 32px;
+  background: #202020 url('../images/topicbar.jpg');
+  background-size: cover;
+  font-family: 'db_heavent', Helvetica, sans-serif;
+}
+#appeal-form #ap-form .sec-topicbar .topicbar-left {
+  height: 50px;
+  margin-top: 15px;
+  line-height: 50px;
+  text-align: left;
+  border-left: 4px solid #fff;
+  padding-left: 10px;
+  color: #fff;
+}
+#appeal-form #ap-form .sec-topicbar .topicbar-left .t-grey {
+  color: #bebebe;
+}
+#appeal-form #ap-form .sec-topicbar .topicbar-left .t-grey-bold {
+  color: #bebebe;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+#appeal-form #ap-form .sec-topicbar .topicbar-left .t-blue {
+  color: #009edb;
+  font-weight: 500;
+}
+#appeal-form #ap-form .sec-topicbar .topicbar-right {
+  position: absolute;
+  float: right;
+  margin-right: 15px;
+  top: 0;
+  right: 0;
+}
+#appeal-form #ap-form .sec-topicbar .topicbar-right img {
+  height: 80px;
+  opacity: 0.8;
+}
+#appeal-form #ap-form label {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 0;
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  #appeal-form #ap-form label {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  #appeal-form #ap-form label {
+    margin-bottom: 3px;
+  }
+}
+#appeal-form #ap-form input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background-color: #00a0d2;
+}
+#appeal-form #ap-form input[type="file"] {
+  background-color: unset;
+  font-size: 24px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#appeal-form #ap-form #choose {
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  padding: 1px 20px;
+  border-radius: 10px;
+  font-weight: 300;
+}
+#appeal-form #ap-form img.clip {
+  margin-top: -5px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+#appeal-form #ap-form input {
+  background-color: #f5f6f8;
+  box-shadow: none;
+  border-color: #e9eaec;
+  font-size: 22px;
+  line-height: 1;
+  height: 40px;
+  padding: 5px 15px;
+}
+#appeal-form #ap-form input::placeholder {
+  font-size: 22px;
+  font-weight: 300;
+}
+#appeal-form #ap-form textarea {
+  height: 200px;
+  background-color: #f5f6f8;
+  box-shadow: none;
+  border-color: #e9eaec;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 300;
+}
+#appeal-form #ap-form textarea::placeholder {
+  font-size: 22px;
+  font-weight: 300;
+}
+#appeal-form #ap-form .select-custom {
+  background-color: #f5f6f8;
+  border: 1px solid #e9eaec;
+  border-radius: 3px;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+}
+#appeal-form #ap-form .select-custom:after {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+#appeal-form #ap-form .select-custom span {
+  font-size: 22px;
+  background: none;
+  color: #999;
+}
+#appeal-form #ap-form .select-custom span.caret {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+}
+#appeal-form #ap-form ul.dropdown-menu {
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
+}
+#appeal-form #ap-form small {
+  color: red;
+  font-size: 16px;
+  display: none;
+}
+#appeal-form #ap-form #appeal_type_dropdown_wrapper {
+  width: 400px;
+}
+@media (max-width: 520px) {
+  #appeal-form #ap-form #appeal_type_dropdown_wrapper {
+    width: 100%;
+  }
+}
+#appeal-form #ap-form #appeal_type_dropdown_wrapper #appeal_dropdown {
+  text-align: left;
+  font-size: 20px;
+  line-height: normal;
+  padding: 5px 15px;
+}
+#appeal-form #ap-form #appeal_type_dropdown_wrapper #appeal_dropdown .caret {
+  margin-left: 15px;
+}
+#appeal-form #ap-form #send-btn-wrapper {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  transition: transform 250ms ease-in-out;
+}
+#appeal-form #ap-form #send-btn-wrapper:hover,
+#appeal-form #ap-form #send-btn-wrapper:focus {
+  transform: scale(1.05);
+  transition: transform 250ms ease-in-out;
+}
+#appeal-form #ap-form #send-btn-wrapper:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: transparent url("../images/customer-care/send-ico.png") no-repeat;
+  background-size: 100%;
+  top: 50%;
+  margin-top: -15px;
+  left: 65px;
+}
+#appeal-form #ap-form #send-btn-wrapper #submitBtn {
+  background: black;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 8px 80px 9px 100px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  height: auto;
+}
+#appeal-form #ap-form #send-btn-wrapper #submitBtn:hover {
+  outline: none;
+  text-decoration: none;
+}
+#appeal-form #ap-form #send-btn-wrapper #submitBtn:focus {
+  outline: none;
+  text-decoration: none;
+}
+#appeal-form #ap-form #filesUpload label {
+  font-size: 26px;
+  font-weight: 300;
+  cursor: pointer;
+}
+#appeal-form #ap-form #filesUpload label span {
+  margin-left: 5px;
+  text-decoration: underline;
+}
+#appeal-form #ap-form #fileToUpload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#appeal-form #ap-form #attachment {
+  font-size: 24px;
+  line-height: 2;
+}
+#appeal-form #ap-form #attachment a {
+  color: #a92722;
+  text-decoration: underline;
+}
+#appeal-form #thank-body {
+  padding: 40px 0;
+  font-family: 'db_heavent', Helvetica, sans-serif;
+}
+#appeal-form #thank-body p {
+  font-size: 24px;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 30px;
+  padding-bottom: 0;
+}
+@media (max-width: 768px) {
+  h2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  border-color: #9a9a9a;
+}
+#warning-message {
+  font-size: 24px;
+  padding-top: 5px;
+  font-weight: 300;
+}
+@media (max-width: 480px) {
+  #warning-message {
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+@media (max-width: 979px) {
+  #appeal-form #hero-image {
+    height: 300px;
+    background-size: cover;
+    background-position: right;
+  }
+}
+@media (max-width: 767px) {
+  #appeal-form #hero-image {
+    height: 180px;
+    background-position: center;
+    background-size: 200%;
+  }
+  #appeal-form #ap-form {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  #appeal-form #ap-form #send-btn-wrapper {
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 0 10px;
+  }
+  #appeal-form #ap-form #filesUpload {
+    text-align: center;
+  }
+  #appeal-form #ap-form #filesUpload label {
+    padding: 10px 0;
+  }
+  #appeal-form #ap-form #attachment {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=appeal-form.css.map */

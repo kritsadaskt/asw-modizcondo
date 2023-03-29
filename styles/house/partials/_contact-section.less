@@ -1,0 +1,134 @@
+@import "../../variables";
+
+#contact-section {
+  .inner {
+    overflow: auto;
+    padding: 50px 0 60px;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: @screen-xs) {
+      padding: 20px 0;
+    }
+
+    .contact-header {
+      text-align: center;
+      h1 {
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+    }
+
+    .contact-content {
+      width: 750px;
+      display: block;
+      text-align: left;
+      margin: 0 auto;
+      overflow: hidden;
+
+      @media (max-width: @screen-sm) {
+        width: 80%;
+      }
+
+      .contact-logo {
+        width: 250px;
+        margin: 0 0 20px;
+        display: block;
+
+        @media (max-width: @screen-sm) {
+          width: 200px;
+        }
+      }
+
+      .contact-side {
+        .contact-info {
+          font-size: 20px;
+          color: #080a0a;
+
+          p {
+            font-weight: 400;
+            line-height: normal;
+            font-size: 26px;
+
+            @media (max-width: @screen-sm) {
+              font-size: 24px;
+            }
+          }
+
+          a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          a.telbox {
+            padding: 5px 12px 3px;
+            margin-top: 10px;
+            border: 2px solid #080a0a;
+            border-radius: 9px;
+            display: inline-block;
+            font-size: 28px;
+            line-height: normal;
+            font-weight: 500;
+            color: #080a0a;
+
+            i {
+              color: #080a0a !important;
+              position: relative;
+              font-size: 20px;
+              top: 2px;
+            }
+          }
+
+          .social-btn-container {
+            position: relative;
+            width: 100%;
+            padding-top: 25px;
+
+            a.social-btn {
+              width: 145px;
+              position: relative;
+              display: inline-block;
+              background-color: #000;
+              color: #fff;
+              padding: 5px;
+              margin-bottom: 8px;
+              margin-right: 5px;
+              text-align: center;
+              border-radius: 10px;
+              font-size: 22px;
+
+              @media (max-width: @screen-sm) {
+                width: 45%;
+              }
+
+              i {
+                font-size: 18px;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+
+        h4.map-pre-text {
+          font-size: 24px;
+        }
+
+        .map-container {
+          color: #080a0a !important;
+          position: relative;
+          display: inline-block;
+          font-size: 20px;
+
+          i.fa-search-plus {
+            font-size: 15px;
+          }
+
+          .contact-map {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

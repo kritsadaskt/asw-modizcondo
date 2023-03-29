@@ -1,0 +1,94 @@
+@import "vars";
+
+#location_section {
+  padding-top: 60px;
+  background-color: #EFEFEF;
+  @media screen and (max-width: $screen-sm) {
+    padding-top: 30px;
+  }
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+  .view-map {
+    color: #7B8A9E;
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: $screen-xs) {
+      flex-direction: column;
+    }
+    a {
+      padding: 0 20px;
+      font-size: 20px;
+      @media screen and (max-width: $screen-xs) {
+        padding: 10px 20px;
+        justify-content: center;
+      }
+    }
+  }
+  .tabs-control {
+    .nav {
+      margin: 40px 0 0;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+      border: none;
+      li {
+        margin: 0 10px;
+        @media screen and (max-width: $screen-xs) {
+          margin: 0;
+        }
+        &.active {
+          a {
+            opacity: 1;
+            background-color: transparent;
+            border-color: white;
+          }
+        }
+        a {
+          opacity: .5;
+          color: white;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 5px solid transparent;
+          @media screen and (max-width: $screen-sm) {
+            font-size: 15px;
+            padding: 5px;
+          }
+          &:hover, &:focus {
+            background-color: transparent;
+            transition: all 400ms ease;
+          }
+          img {
+            width: 65px;
+            display: block;
+            margin: 0 auto 10px;
+            @media screen and (max-width: $screen-xs) {
+              width: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .top {
+    background: linear-gradient(to bottom, #EFEFEF 70%, $main-color 0);
+    @media screen and (max-width: $screen-xs) {
+      background: linear-gradient(to bottom, #EFEFEF 60%, $main-color 0);
+    }
+  }
+  .bottom {
+    background-color: $secondary-color;
+    padding: 5rem 0 3.5rem;
+    color: #fff;
+    font-size: 20px;
+    .place {
+      margin-bottom: 3rem;
+      @media screen and (max-width: $screen-xs) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

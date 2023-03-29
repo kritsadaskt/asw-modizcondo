@@ -1,0 +1,106 @@
+#thank-you {
+  height: 100vh;
+  padding: 3em 0;
+  background: url("https://modizcondo.com/wp-content/uploads/2021/07/modiz50-thankyou-d.jpg") left bottom/cover no-repeat;
+}
+@media screen and (max-width: 767px) {
+  #thank-you {
+    background: url("https://modizcondo.com/wp-content/uploads/2021/07/modiz50-thankyou-m.jpg") center bottom/cover no-repeat;
+  }
+}
+@media screen and (max-width: 767px) {
+  #thank-you {
+    padding: 30px 0;
+  }
+}
+#thank-you .left .left-txt {
+  font-family: "Taviraj", serif;
+  color: #2d2d2d;
+  font-size: 28px;
+  margin-top: 5rem;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  #thank-you .left .left-txt {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #thank-you .left .left-txt {
+    margin-top: 15px;
+    font-size: 18px;
+    text-shadow: 0 0 5px #e4e4e4;
+  }
+}
+#thank-you .right .thank-you-text-box {
+  background-color: #060d26;
+  font-family: "DB Gill Siam X", sans-serif;
+  padding: 3rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #thank-you .right .thank-you-text-box {
+    padding: 15px;
+  }
+}
+#thank-you .right .thank-you-text-box .thank-you-text-title {
+  font-size: 5rem;
+  color: #f8cf47;
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  #thank-you .right .thank-you-text-box .thank-you-text-title {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #thank-you .right .thank-you-text-box .thank-you-text-title {
+    font-size: 30px;
+  }
+}
+#thank-you .right .thank-you-text-box .thank-you-text-box-logo {
+  width: 220px;
+  margin: 30px auto;
+}
+@media screen and (max-width: 768px) {
+  #thank-you .right .thank-you-text-box .thank-you-text-box-logo {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #thank-you .right .thank-you-text-box .thank-you-text-box-logo {
+    width: 150px;
+    margin: 10px 0;
+  }
+}
+#thank-you .right .thank-you-text-box .thank-you-text-sub {
+  color: #fff;
+  font-size: 28px;
+}
+@media screen and (max-width: 768px) {
+  #thank-you .right .thank-you-text-box .thank-you-text-sub {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #thank-you .right .thank-you-text-box .thank-you-text-sub {
+    font-size: 16px;
+  }
+}
+#thank-you .right .thank-you-text-box .back-to-modiz50 {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  #thank-you .right .thank-you-text-box .back-to-modiz50 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #thank-you .right .thank-you-text-box .back-to-modiz50 {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=modiz50-thankyou.css.map */

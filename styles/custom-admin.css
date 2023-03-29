@@ -1,0 +1,7 @@
+.ui-sortable {
+  min-height: 0 !important;
+}
+.acf-photo-gallery-metabox-list li {
+  height: auto;
+}
+/*# sourceMappingURL=custom-admin.css.map */

@@ -1,0 +1,204 @@
+@import "vars";
+
+#project_concept {
+  padding: 50px 0 80px;
+  background: linear-gradient(to bottom, white 80%, #0F2D52 0);
+  @media screen and (max-width: $screen-sm) {
+    padding: 40px 0 60px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    padding: 40px 0 0;
+    background-color: white;
+  }
+
+  .concept-box {
+    background-color: $secondary-color;
+    .left {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 420px;
+      &::before {
+        content: 'ภาพจำลองบรรยากาศจำลองเพื่อการโฆษณาเท่านั้น';
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        bottom: 0;
+        right: 5px;
+        position: absolute;
+        opacity: .7;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        height: 310px;
+      }
+      @media screen and (max-width: $screen-xs) {
+        height: 220px;
+      }
+    }
+    .right {
+      color: #ffffff;
+      .right-inner {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+        @media screen and (max-width: $screen-xs) {
+          width: 100%;
+          margin: 0;
+        }
+        h4 {
+          font-size: 3rem;
+          font-weight: 400;
+          @media screen and (max-width: $screen-sm) {
+            font-size: 22px;
+          }
+          @media screen and (max-width: $screen-xs) {
+            font-size: 28px;
+          }
+        }
+        .desc-box {
+          font-size: 20px;
+          font-weight: 300;
+          padding-left: 20px;
+          position: relative;
+          @media screen and (max-width: $screen-sm) {
+            font-size: 16px;
+            line-height: normal;
+          }
+          @media screen and (max-width: $screen-xs) {
+            font-size: 20px;
+          }
+          &::before {
+            content: '';
+            height: 100px;
+            width: 4px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+#project_concept_tabs {
+  padding: 50px 0 100px;
+  @media screen and (max-width: $screen-sm) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: $screen-xs) {
+    padding: 0;
+    .container {
+      padding: 0;
+    }
+  }
+
+  @mixin concept-card() {
+    .concept-detail {
+      color: white;
+      display: flex;
+      @media screen and (max-width: $screen-xs) {
+        display: block;
+      }
+      .left {
+        width: 30%;
+        background-color: $secondary-color;
+        padding: 30px;
+        font-size: 30px;
+        line-height: normal;
+        @media screen and (max-width: $screen-xs) {
+          width: 100%;
+        }
+        .inner {
+          border-left: 2px solid white;
+          padding-left: 15px;
+          p {
+            margin-bottom: 5px;
+            font-size: 22px;
+            line-height: 1;
+            @media screen and (max-width: $screen-sm) {
+              font-size: 16px;
+            }
+            @media screen and (max-width: $screen-xs) {
+              font-size: 26px;
+              font-weight: 300;
+            }
+          }
+          h4 {
+            font-size: 26px;
+            margin: 0;
+            @media screen and (max-width: $screen-sm) {
+              font-size: 20px;
+            }
+            @media screen and (max-width: $screen-xs) {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .right {
+        width: 70%;
+        padding: 30px;
+        background-color: $main-color;
+        @media screen and (max-width: $screen-sm) {
+          font-size: 15px;
+        }
+        @media screen and (max-width: $screen-xs) {
+          width: 100%;
+          font-size: 18px;
+          line-height: normal;
+          font-weight: 300;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .concept-tabs {
+    .tabs-control {
+      .nav {
+        margin-left: 0;
+        li {
+          a {
+            color: #6F6955;
+            opacity: .58;
+            border-radius: 0;
+            text-align: right;
+            font-size: 24px;
+            line-height: normal;
+            height: 65px;
+            @media screen and (max-width: $screen-sm) {
+              font-size: 20px;
+            }
+            &:hover, &:focus {
+              background: transparent;
+              color: $main-color;
+            }
+          }
+          &.active {
+            a {
+              opacity: 1;
+              color: $main-color;
+              font-size: 32px;
+              font-weight: 600;
+              background-color: transparent;
+              @media screen and (max-width: $screen-sm) {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tabs-contents {
+      @include concept-card;
+    }
+  }
+  #concept_m {
+    padding-bottom: 50px;
+    @include concept-card;
+  }
+}

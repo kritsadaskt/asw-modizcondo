@@ -1,0 +1,118 @@
+@import "../../variables";
+
+#project-gallery {
+  .inner {
+    overflow: hidden;
+    padding: 40px 0;
+
+    @media (max-width: @screen-xs) {
+      padding: 10px 0 0;
+    }
+
+    .section-title {
+      @media (max-width: @screen-sm) {
+        margin: 15px 0;
+        font-size: 2.5em;
+      }
+    }
+
+    .gallery-tab-bar {
+      text-align: center;
+      padding: 20px 0;
+      ul {
+        margin: 0;
+        padding-left: 0;
+        li {
+          display: inline-block;
+          a{
+            font-size: 30px;
+            color: #fff;
+            font-weight: 300;
+            padding: 15px 20px 0;
+            display: inline-block;
+            line-height: normal;
+
+            @media (max-width: @screen-xs) {
+              font-size: 26px;
+            }
+          }
+
+          &.active {
+            a {
+              border-bottom: 2px solid;
+            }
+          }
+        }
+      }
+    }
+
+    .flexslider {
+      margin: 0;
+      padding: 0;
+      border: none;
+      position: relative;
+      background-color: transparent;
+    }
+
+    #main-gallery-slider, #unit-gallery-slider, #addition-gallery-slider {
+      .flex-direction-nav {
+        border: none;
+
+        .flex-prev {
+          left: 0;
+        }
+        .flex-next {
+          right: 0;
+        }
+      }
+      .slides {
+        li {
+          border: none;
+
+          .gallery-image {
+            width: 100%;
+            height: 650px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media (max-width: @screen-sm) {
+              height: 450px;
+            }
+
+            @media (max-width: @screen-xs) {
+              height: 280px;
+            }
+          }
+        }
+      }
+    }
+
+    #main-gallery-carousel, #unit-gallery-carousel, #addition-gallery-carousel {
+      max-width: 680px;
+      margin: auto;
+      padding-bottom: 10px;
+      padding-top: 10px;
+
+      &.flexslider {
+        .slides {
+          li {
+            border: 5px solid transparent;
+
+            .gallery-image {
+              width: 100%;
+              height: 120px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+
+    .flex-direction-nav a {
+      height: 50px;
+    }
+  }
+}

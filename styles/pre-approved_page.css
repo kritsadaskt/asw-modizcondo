@@ -1,0 +1,238 @@
+@charset "UTF-8";
+.remark {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: normal;
+}
+.remark strong {
+  font-weight: 500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#pre-approved_section {
+  padding: 3em 0;
+}
+#pre-approved_section .header {
+  color: #000000;
+  margin-bottom: 1em;
+}
+#pre-approved_section .header .page-title {
+  font-size: 36px;
+}
+#pre-approved_section .calc-area .nav {
+  margin-left: 0;
+  text-align: center;
+}
+#pre-approved_section .calc-area .nav li {
+  float: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+#pre-approved_section .calc-area .nav li a {
+  box-shadow: 0 5px 10px rgba(177, 177, 177, 0.61);
+  padding: 30px 20px 20px;
+  border-radius: 10px;
+  color: #02162B;
+}
+@media screen and (max-width: 767px) {
+  #pre-approved_section .calc-area .nav li a {
+    padding: 20px 10px 15px;
+  }
+}
+#pre-approved_section .calc-area .nav li a .pill-title {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  #pre-approved_section .calc-area .nav li a .pill-title {
+    font-size: 15px;
+  }
+}
+#pre-approved_section .calc-area .nav li a svg {
+  width: 40px;
+}
+#pre-approved_section .calc-area .nav li a svg path {
+  fill: #02162B;
+}
+#pre-approved_section .calc-area .nav li.active a {
+  color: #ffffff;
+  background-color: #02162B;
+}
+#pre-approved_section .calc-area .nav li.active a svg path {
+  fill: #ffffff;
+}
+#pre-approved_section .calc-area .tab-content {
+  margin-top: 30px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane {
+  color: #ffffff;
+  padding: 40px 60px 60px;
+  border-radius: 10px;
+  background-color: #02162B;
+}
+@media screen and (max-width: 768px) {
+  #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane {
+    padding: 20px;
+  }
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left h4 {
+  font-size: 28px;
+  font-weight: 400;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left small {
+  color: #dcdcdc;
+  font-weight: 100;
+  display: inline-block;
+  margin-top: 10px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form label {
+  font-size: 20px;
+  font-weight: 100;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group input {
+  font-size: 24px;
+  color: #222;
+  font-weight: 300;
+  padding: 10px 15px;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group .input-group-append .input-group-text {
+  position: absolute;
+  color: gray;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+  font-size: 24px;
+  font-weight: 300;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+  }
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn {
+  border-radius: 50px;
+  font-size: 24px;
+  padding: 5px 30px;
+  margin: 0 8px;
+  width: 180px;
+  transition: all 300ms ease;
+}
+@media screen and (min-width: 769px) {
+  #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn:hover, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn:focus {
+    transform: scale(1.08);
+    transition: all 300ms ease;
+  }
+}
+@media screen and (max-width: 768px) {
+  #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn {
+    width: 135px;
+  }
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn#ability_calc_btn, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn#calc_btn {
+  background-color: #1FC0DD;
+  color: #ffffff;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn#ability_reset_btn, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .input-group.actions_btn .calc-btn#reset1 {
+  background-color: #ffffff;
+  color: #02162B;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .bank_listed button {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  line-height: 34px;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 15px;
+  text-align: left;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .bank_listed button#bank .caret {
+  float: right;
+  margin-top: 17px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .bank_listed button img {
+  width: 20px;
+  margin-right: 4px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .bank_listed .dropdown-menu {
+  width: 100%;
+  padding: 0;
+  height: 150px;
+  overflow: scroll;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left form .bank_listed .dropdown-menu li {
+  color: #000000;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .left #bank_rate {
+  background: #fff;
+  color: #222222;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 24px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin-top: 80px;
+  color: #02162B;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result .header_icon {
+  width: 100px;
+  margin: -75px auto 20px;
+  display: block;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result .result-title {
+  font-size: 28px;
+  margin: 0 0 5px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #loan_ability_line, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #payment_cap_line,
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #loan_cap_line1, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #payment_cap_line1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #loan_ability_line .value, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #payment_cap_line .value,
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #loan_cap_line1 .value, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #payment_cap_line1 .value {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #loan_ability_line .value::after, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #payment_cap_line .value::after,
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #loan_cap_line1 .value::after, #pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #payment_cap_line1 .value::after {
+  content: "บาท";
+  font-size: 22px;
+  margin-left: 10px;
+}
+#pre-approved_section .calc-area .tab-content .tab-pane .calc-area-pane .right .result #loan_ability_line .value {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=pre-approved_page.css.map */

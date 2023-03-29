@@ -1,0 +1,137 @@
+@import "../../variables";
+
+#progress-section {
+  .inner {
+    overflow: auto;
+    padding: 50px 0 60px;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: @screen-sm) {
+      padding: 60px 10px;
+    }
+
+    @media (max-width: @screen-xs) {
+      padding: 10px;
+    }
+
+    .border-line {
+      border-bottom:2px solid #000;
+    }
+
+    .progress-wrapper {
+      background-color: #f1f1f1;
+      width: 970px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 25px 50px;
+
+      @media (max-width: @screen-sm) {
+        width: 100%;
+        padding: 20px;
+      }
+
+      @media (max-width: @screen-xs) {
+        padding: 15px;
+      }
+
+      > .header-text {
+        text-align: center;
+        font-size: 18px;
+      }
+      > .percent {
+        font-weight: bold;
+        font-size: 58px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .gallery-progress {
+        overflow: auto;
+
+        @media (max-width: @screen-xs) {
+          .gallery-image {
+            overflow: auto;
+          }
+
+          .gallery-content {
+            overflow: auto;
+            margin: 20px 0;
+          }
+        }
+
+        .progress-circle {
+          font-size: 30px;
+          background-color: #ddd;
+          margin-bottom: 0;
+        }
+
+        h5.month {
+          font-size: 24px;
+        }
+
+        .progress-item {
+          font-size: 20px;
+          .progress-percent {
+            float: right;
+          }
+          .progress-bar-percent{
+            width: 100%;
+            height: 5px;
+            background-color: #dddddd;
+            position: relative;
+            margin-top:10px;
+            margin-bottom: 10px;
+            .progress-bar-inner{
+              position: relative;
+              height: 100%;
+            }
+          }
+          .gallery-border-line {
+            width: 100%;
+            height: 1px;
+          }
+        }
+
+        .gallery-image-show {
+          padding: 5px;
+          background: #fff;
+          box-shadow: 3px 3px 10px grey;
+        }
+
+        .gallery-content-text {
+          margin-bottom: 15px;
+        }
+        .gallery-content-last {
+          margin-top: 10px;
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+        .gallery-image-small-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        .gallery-image-small {
+          width: 70px;
+          height: 60px;
+          margin-left: 5px;
+          margin-right: 5px;
+          display: flex;
+          align-items: center;
+          border: 5px solid #fff;
+          cursor: pointer;
+
+          @media (max-width: @screen-sm) {
+            height: 50px;
+          }
+
+          @media (max-width: @screen-xs) {
+            height: auto;
+            border-width: 3px;
+          }
+        }
+      }
+    }
+  }
+}

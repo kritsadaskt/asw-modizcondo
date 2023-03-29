@@ -1,0 +1,28 @@
+@import "../../variables";
+
+#advantage-section {
+  .inner {
+    overflow: auto;
+    padding: 40px 0 60px;
+
+    .advantage-wrapper {
+      .adv-title {
+        font-size: 52px;
+        text-align: center;
+
+        @media (max-width: @screen-xs) {
+          font-size: 28px;
+        }
+      }
+      .adv-details {
+        width: 750px;
+        margin: 20px auto;
+        padding: 0 15px;
+
+        @media (max-width: @screen-xs) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

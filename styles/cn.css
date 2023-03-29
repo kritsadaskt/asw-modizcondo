@@ -1,0 +1,165 @@
+body {
+  font-family: "Noto Sans SC", "db_heavent", sans-serif;
+  font-size: 12px;
+}
+body #hero-image {
+  margin-bottom: 3.5rem;
+}
+body#condominium #condo_nav li a {
+  font-size: 20px;
+}
+body#condominium .tab-content .filter_area_pane h3 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+body#condominium .tab-content .filter_area_pane .options-wrapper .checkbox {
+  font-size: 16px;
+}
+body#condominium .tab-content .filter_area_pane .filter_area_submit_pane #filter_area_submit_btn {
+  font-size: 24px;
+  padding: 10px 35px;
+}
+body#condominium .project .item-wrapper .item-detail h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+body#condominium .project .item-wrapper .item-detail .location {
+  font-size: 16px;
+}
+body#condominium .project .item-wrapper .item-detail .project-desc {
+  font-size: 15px;
+  line-height: normal;
+}
+
+header .line-2 ul li a {
+  font-size: 16px;
+  line-height: normal;
+  font-family: "Noto Sans SC", "db_heavent", sans-serif;
+}
+
+#home #home-headline h1 {
+  font-size: 3em;
+}
+#home #main #condo_nav li a {
+  font-size: 24px;
+}
+#home #main .tab-content .filter_area_pane h3 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+#home #main .tab-content .filter_area_pane .options-wrapper .checkbox {
+  font-size: 16px;
+}
+#home #main .tab-content .filter_area_pane .filter_area_submit_pane #filter_area_submit_btn {
+  font-size: 24px;
+  padding: 10px 35px;
+}
+#home #projects-type-select .project-type .button-text-wrapper p {
+  font-size: 2.5em;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+#home #main .project .item-wrapper .item-detail h4 {
+  font-size: 22px;
+}
+#home #main .project .item-wrapper .item-detail .project-desc {
+  font-size: 16px;
+}
+
+#content .sec-topicbar .topicbar-left .t-grey {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+#primary.condo section .inner .section-title {
+  font-size: 2.8rem;
+  padding-bottom: 10px;
+  line-height: normal;
+  font-weight: bold;
+}
+#primary.condo #hero-banner #register-box #reg-form input[type=text], #primary.condo #hero-banner #register-box #reg-form input[type=tel], #primary.condo #hero-banner #register-box #reg-form input[type=email] {
+  font-size: 18px;
+}
+#primary.condo #hero-banner #register-box #reg-form #submit {
+  font-size: 28px;
+  padding: 8px 15px;
+}
+#primary.condo #hero-banner #register-box #reg-form .telbox_wrapper .telbox {
+  font-size: 24px;
+  font-weight: bold;
+}
+#primary.condo #hero-banner #register-box #reg-form #acceptPolicyCheckboxWrapper label {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+#primary.condo #project-gallery .inner #main-gallery-slider .slides li .gallery-image .gallery-overlay, #primary.condo #project-gallery .inner #addition-gallery-slider .slides li .gallery-image .gallery-overlay, #primary.condo #project-gallery .inner #unit-gallery-slider .slides li .gallery-image .gallery-overlay {
+  font-size: 14px;
+  right: 10px;
+  bottom: 10px;
+}
+#primary.condo #info-section .inner .tab-content .tab-pane .info-box {
+  font-size: 16px;
+}
+#primary.condo #progress-section .inner .progress-wrapper .gallery-progress .progress-item p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+#primary.condo #progress-section .inner .progress-wrapper .gallery-progress .progress-item h4 {
+  font-size: 22px;
+}
+
+#contact-section .inner .contact-content .contact-side .contact-info a.telbox {
+  padding: 5px 15px;
+  border-width: 3px;
+  font-size: 22px;
+  font-weight: 600;
+}
+#contact-section .inner .contact-content .contact-side .contact-info p {
+  font-size: 18px;
+}
+#contact-section .inner .contact-content .contact-side .contact-info .social-btn-container a.social-btn {
+  font-size: 18px;
+}
+
+#footer-nav #footer-wrapper .footer-menu-title {
+  padding-bottom: 15px;
+  font-size: 24px;
+}
+#footer-nav #footer-wrapper .footer-project-title {
+  font-size: 20px;
+}
+#footer-nav #footer-wrapper .footer-menu-wrapper ul li {
+  padding-bottom: 3px;
+}
+#footer-nav #footer-wrapper .footer-menu-wrapper ul li a {
+  font-size: 16px;
+  line-height: normal;
+}
+#footer-nav #footer-wrapper .footer-contact-wrapper .footer-call a {
+  font-size: 22px;
+  margin-right: 0;
+}
+
+footer#colophon #footer-tel span {
+  font-size: 22px;
+}
+
+#cookie-accept-popup .inner p {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  #cookie-accept-popup .inner p {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+}
+#cookie-accept-popup .inner button {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=cn.css.map */

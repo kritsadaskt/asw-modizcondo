@@ -1,0 +1,34 @@
+.icon_listed {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.icon_listed .icon {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 520px) {
+  .icon_listed .icon {
+    min-height: 160px;
+  }
+}
+.icon_listed .icon .icon-img {
+  width: 80%;
+  margin: 0 auto;
+}
+.icon_listed .icon .icon-title {
+  color: #fff;
+}
+
+.btn-icon-load-more {
+  clear: both;
+}
+.btn-icon-load-more #load_icon_more {
+  background-color: #211817;
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 30px;
+  border: 1px solid #7d7d7d;
+}
+
+/*# sourceMappingURL=shortcode.css.map */

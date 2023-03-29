@@ -1,0 +1,83 @@
+#thank-you {
+  height: 100vh;
+  padding: 3em 0;
+  background: url("https://modizcondo.com/wp-content/uploads/2021/07/modiz50-thankyou-d.jpg") left bottom/cover no-repeat;
+  @media screen and (max-width: 767px) {
+    background: url("https://modizcondo.com/wp-content/uploads/2021/07/modiz50-thankyou-m.jpg") center bottom/cover no-repeat;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 30px 0;
+  }
+
+  .left {
+    .left-txt {
+      font-family: 'Taviraj', serif;
+      color: #2d2d2d;
+      font-size: 28px;
+      margin-top: 5rem;
+      letter-spacing: 2px;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 767px) {
+        margin-top: 15px;
+        font-size: 18px;
+        text-shadow: 0 0 5px #e4e4e4;
+      }
+    }
+  }
+  .right {
+    .thank-you-text-box {
+      background-color: #060d26;
+      font-family: 'DB Gill Siam X', sans-serif;
+      padding: 3rem;
+      text-align: center;
+      @media screen and (max-width: 767px) {
+        padding: 15px;
+      }
+      .thank-you-text-title {
+        font-size: 5rem;
+        color: #f8cf47;
+        margin-top: 0;
+        @media screen and (max-width: 768px) {
+          font-size: 3.8rem;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 30px;
+        }
+      }
+      .thank-you-text-box-logo {
+        width: 220px;
+        margin: 30px auto;
+        @media screen and (max-width: 768px) {
+          width: 180px;
+        }
+        @media screen and (max-width: 767px) {
+          width: 150px;
+          margin: 10px 0;
+        }
+      }
+      .thank-you-text-sub {
+        color: #fff;
+        font-size: 28px;
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+      .back-to-modiz50 {
+        color: #fff;
+        font-weight: 300;
+        text-decoration: underline;
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

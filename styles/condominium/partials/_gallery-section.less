@@ -1,0 +1,108 @@
+@import "../../variables";
+
+#project-gallery {
+  .inner {
+    overflow: hidden;
+    padding: 40px 0;
+
+    @media (max-width: @screen-xs) {
+      padding: 10px 0 0;
+    }
+
+    .section-title {
+      @media (max-width: @screen-sm) {
+        margin: 15px 0;
+        font-size: 2.5em;
+      }
+    }
+
+    .gallery-tab-bar {
+      text-align: center;
+      padding: 20px 0;
+      ul {
+        margin: 0;
+        padding-left: 0;
+        li {
+          display: inline-block;
+          a{
+            font-size: 30px;
+            color: #fff;
+            font-weight: 300;
+            padding: 15px 20px 0;
+            display: inline-block;
+            line-height: normal;
+          }
+
+          &.active {
+            a {
+              border-bottom: 2px solid;
+            }
+          }
+        }
+      }
+    }
+
+    .flexslider {
+      margin: 0;
+      padding: 0;
+      border: none;
+      position: relative;
+      background-color: transparent;
+    }
+
+    #main-gallery-slider, #unit-gallery-slider, #addition-gallery-slider {
+      position: relative;
+      overflow: hidden;
+      .flex-direction-nav {
+        border: none;
+      }
+      .slides {
+        li {
+          border: none;
+          .gallery-image {
+            min-height: 650px;
+            background-size: cover;
+            position: relative;
+            @media screen and (max-width: @screen-sm) {
+              min-height: 450px;
+            }
+            @media screen and (max-width: 520px) {
+              min-height: 250px;
+            }
+            .gallery-overlay {
+              position: absolute;
+              font-size: 18px;
+              color: #fff;
+              z-index: 10;
+              bottom: 0;
+              right: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    #main-gallery-carousel, #unit-gallery-carousel, #addition-gallery-carousel {
+      max-width: 680px;
+      margin: auto;
+      padding-bottom: 10px;
+      padding-top: 10px;
+
+      &.flexslider {
+        .slides {
+          li {
+            border: 5px solid transparent;
+            .gallery-image {
+              min-height: 110px;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+
+    .flex-direction-nav a {
+      height: 50px;
+    }
+  }
+}

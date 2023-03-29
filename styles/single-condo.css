@@ -1,0 +1,23 @@
+#primary.condo #hero-image {
+  margin-bottom: 0;
+}
+#primary.condo #condo-gallery {
+  background-color: #181818;
+  padding: 20px 0 40px;
+}
+#primary.condo #condo-gallery .section-title {
+  color: white;
+  font-size: 2.5em;
+  font-weight: normal;
+  position: relative;
+}
+#primary.condo #condo-gallery .section-title:before {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 2px;
+  background-color: #bed630;
+  bottom: 0;
+  left: 50%;
+  margin-left: -90px;
+}

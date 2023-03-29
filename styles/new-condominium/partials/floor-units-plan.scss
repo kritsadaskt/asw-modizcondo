@@ -1,0 +1,78 @@
+@import "vars";
+
+#floor_units_plan {
+  padding: 60px 0;
+  .nav {
+    margin: 0;
+    display: flex;
+    border-bottom: none;
+    justify-content: center;
+    li {
+      a {
+        color: #97A4B4;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid transparent;
+        &:hover, &:focus {
+          color: $main-color;
+          background-color: transparent;
+          border-bottom-color: $secondary-color;
+        }
+      }
+      &.active {
+        a {
+          color: $main-color;
+          border-bottom-color: $secondary-color;
+        }
+      }
+    }
+  }
+  .tab-pane {
+    .show-image {
+      text-align: center;
+      img {
+        width: 80%;
+        @media screen and (max-width: $screen-xs) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .tab-btn-wrapper {
+    text-align: center;
+    button {
+      background: transparent;
+      border-style: none none solid none;
+      border-bottom-color: transparent;
+      border-bottom-width: 2px;
+      cursor: pointer;
+      border-radius: 0;
+      margin: 0 20px;
+      &.active, &:hover {
+        border-bottom-color: $secondary-color;
+      }
+      &:active, &:focus {
+        outline: transparent;
+      }
+    }
+  }
+  .floor-unit-tab {
+    img {
+      width: 80%;
+      margin: 40px auto 0;
+      display: block;
+      @media screen and (max-width: $screen-sm) {
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+    .select-plan {
+      .custom-select {
+        margin: 0 auto;
+        width: 220px;
+      }
+    }
+  }
+}

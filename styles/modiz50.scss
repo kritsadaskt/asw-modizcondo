@@ -1,0 +1,495 @@
+$yellow : #D3AB45;
+$navy : #060D26;
+$dark-navy : #142F4F;
+$light-gray : #f7f7f7;
+
+.section-title .title {
+  color: #142F4F;
+}
+
+#top_menu {
+  .navbar {
+    ul.nav {
+      li {
+        &.active {
+          border-bottom-color: $yellow;
+        }
+        a {
+          color: $navy;
+        }
+      }
+    }
+  }
+}
+
+#register_section {
+  background: linear-gradient(to right, #060D26 75%, #D3AB45 0);
+  @media screen and (max-width: 520px) {
+    background: #060D26;
+  }
+  .register-headline-text {
+    .headline {
+      border-color: #fff;
+      color: #fff;
+      &::before {
+        background-color: rgba(255, 255, 255, .5);
+      }
+    }
+    .sub-headline {
+      color: #fff;
+    }
+  }
+  .register-box-wrapper {
+    @media screen and (max-width: 520px) {
+      &::before, &::after {
+        display: none;
+      }
+    }
+    #register_box {
+      @media screen and (max-width: 520px) {
+        padding: 20px 0;
+      }
+      & > img {
+        display: none;
+      }
+      .wpcf7 {
+        background-color: white;
+        padding: 60px 30px;
+        border-radius: 20px;
+        form {
+          background-color: transparent;
+        }
+        @media screen and (max-width: 768px) {
+          padding: 40px 0;
+        }
+        @media screen and (max-width: 520px) {
+          padding: 0;
+        }
+      }
+      .wpcf7-submit {
+        background: url("../images/modiz50/modiz50_regis-btn-bg.png") right bottom/cover no-repeat;
+      }
+    }
+  }
+}
+
+#project_concept {
+  background: linear-gradient(to bottom, $light-gray 80%, $yellow 0);
+  .section-title .title {
+    color: #142F4F;
+    border-color: #142f4f;
+  }
+  .concept-box {
+    background-color: $navy;
+    .left {
+      background-position: right bottom;
+      &::before {
+        display: none;
+      }
+    }
+    .right {
+      margin: 0 auto;
+      padding: 10px 20px 0;
+      .right-inner {
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          padding: 10px 0;
+        }
+        h3 {
+          color: $yellow;
+          margin: 0 0 10px;
+          font-size: 30px;
+          @media screen and (max-width: 768px) {
+            font-size: 22px;
+            margin: 0 0 10px;
+          }
+        }
+        p {
+          font-weight: 300;
+          line-height: normal;
+          padding-left: 20px;
+          position: relative;
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+          &::before {
+            content: '';
+            width: 5px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            @media screen and (max-width: 768px) {
+              width: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#project_concept_tabs {
+  .concept-tabs {
+    .tabs-control {
+      .nav {
+        li {
+          &.active {
+            color: $dark-navy;
+            a {
+              @media screen and (max-width: 768px) {
+                font-size: 22px;
+              }
+            }
+          }
+          a {
+            @media screen and (max-width: 768px) {
+              padding: 10px 0;
+              height: 45px;
+            }
+          }
+        }
+      }
+    }
+    .tabs-contents {
+      .concept-detail {
+        .left {
+          background-color: $navy;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          .inner {
+            border-color: #fff;
+            color: #fff;
+            h3 {
+              margin: 0;
+            }
+          }
+        }
+        .right {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+  #concept_m {
+    .concept-detail {
+      .left {
+        background-color: $navy;
+        .inner {
+          h3 {
+            margin: 0;
+          }
+        }
+      }
+      .right {
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
+#project_details {
+  .detail-box {
+    background-color: $navy;
+    .project-detail-img {
+      @media screen and (min-width: 768px) {
+        width: 45%;
+      }
+      img {
+        box-shadow: -30px -30px 0 $yellow;
+      }
+    }
+    .project-detail-txt {
+      @media screen and (min-width: 768px) {
+        width: 55%;
+      }
+      @media screen and (max-width: 520px) {
+        .inner {
+          padding: 20px 0;
+          table {
+            font-size: 18px;
+            font-weight: 300;
+            tr {
+              td:first-child {
+                width: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .download-brochure {
+    a {
+      background-color: $yellow;
+    }
+  }
+}
+
+#facility_1 {
+  .tabs-control {
+    .nav {
+      li {
+        a {
+          &:hover, &:focus {
+            border-color: $yellow;
+          }
+        }
+        &.active {
+          a {
+            border-color: $yellow;
+          }
+        }
+      }
+    }
+  }
+  .tabs-contents {
+    .fac-card {
+      background-color: $yellow;
+      .fac-detail {
+        h4 {
+          font-size: 32px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        .txt {
+          font-size: 22px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+#other_facilities {
+  background-color: $navy;
+  > img {
+    display: none;
+  }
+  #icon_listed {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    .fac-item {
+      width: 20%;
+      float: left;
+      padding: 10px 5px;
+      margin-bottom: 15px;
+      text-align: center;
+      @media screen and (max-width: 767px) {
+        width: calc(100% / 3);
+        //height: 115px;
+        display: inline-block;
+        margin-bottom: 0;
+      }
+      img {
+        width: 100%;
+        margin-bottom: 0;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+  #toggle_fac_icon {
+    background-color: $yellow;
+    color: #fff;
+    padding: 7px 10px 5px;
+    border: none;
+    border-radius: 5px;
+    outline: transparent;
+    width: 160px;
+  }
+}
+
+#project_progress {
+  background-color: $navy;
+  @media screen and (max-width: 1024px) {
+    padding: 50px 0;
+  }
+  .header {
+    .section-title {
+      .title {
+        color: #fff;
+        border-color: $yellow;
+      }
+    }
+  }
+  .progress-wrapper {
+    background-color: transparent;
+    .container {
+      background-color: transparent;
+      #progress_gallery {
+        .progress-gallery-thumbs {
+          .slick-prev {
+            background-image: url("../images/ico/left-arrow-white.png") !important;
+          }
+          .slick-next {
+            background-image: url("../images/ico/right-arrow-white.png") !important;
+          }
+        }
+      }
+      #progress_listed {
+        .overall-circle {
+          .progress-circle {
+            span {
+              color: $navy;
+            }
+            .left-half-clipper {
+              .first50-bar {
+                background-color: $yellow;
+              }
+            }
+            .value-bar {
+              border-color: $yellow;
+            }
+          }
+        }
+        .month {
+          color: #fff;
+        }
+        .progress-item {
+          p {
+            color: #fff;
+          }
+          .progress-bar-percent {
+            border-color: $yellow;
+            .progress-bar-inner {
+              background-color: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#floor_units_plan {
+  .floorUnitShow {
+    margin: 60px auto;
+    width: 65%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin: 30px 0;
+    }
+    @media screen and (max-width: 1024px) {
+      margin: 30px auto;
+      width: 80%;
+    }
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .dropdown-wrapper {
+    display: flex;
+    justify-content: center;
+    .dropdown {
+      .btn {
+        width: 100%;
+        font-size: 22px;
+        text-align: left;
+        padding: 5px 20px;
+        border-top: none;
+        border-radius: 0;
+        border-right: none;
+        border-left: none;
+        border-bottom: 2px solid $navy;
+        white-space: normal;
+        &:hover, &:focus, &:active {
+          background-color: transparent;
+          box-shadow: none;
+        }
+
+        @media screen and (max-width: 767px) {
+          padding: 10px 20px 10px 5px;
+          white-space: inherit;
+          line-height: normal;
+          font-size: 18px;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          top: 18px;
+          right: 5px;
+          width: 12px;
+          height: 8px;
+          background: transparent url('../images/ico/arrow_down.png') center/contain no-repeat;
+        }
+      }
+      &.open {
+        .btn {
+          background-color: transparent;
+        }
+      }
+      .dropdown-menu {
+        width: 100%;
+        border-radius: 0;
+        font-size: 20px;
+        top: 95%;
+        border: none;
+        height: 300px;
+        overflow: scroll;
+        @media screen and (max-width: 767px) {
+          font-size: 18px;
+        }
+        .dropdown-header {
+          font-size: 1.2em;
+          line-height: normal;
+          color: $navy;
+          white-space: normal;
+        }
+        li:not(.dropdown-header) {
+          a {
+            padding: 5px 20px 5px 35px;
+            white-space: break-spaces;
+            @media screen and (max-width: 767px) {
+              padding: 5px 20px 5px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #floor_plan {
+    .dropdown-wrapper {
+      .dropdown {
+        width: 450px;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #unit_plan {
+    .dropdown-wrapper {
+      .dropdown {
+        width: 200px;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#location_section {
+  background-color: $light-gray;
+  .top {
+    background: linear-gradient(to bottom, $light-gray 70%, $navy 0);
+    @media screen and (max-width: 1024px) {
+      background: linear-gradient(to bottom, $light-gray 50%, $navy 0);
+    }
+  }
+  .bottom {
+    background-color: $yellow;
+  }
+  .view-map {
+    a {
+      font-size: 22px;
+      color: $navy;
+    }
+  }
+}
